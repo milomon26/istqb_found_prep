@@ -1,0 +1,39 @@
+VERIFICHE SUL PACCHETTO ISTQB — 18/10/2026
+
+Fonte: ISTQB_prep_cert(2).html fornito dall’utente.
+
+1. Contenuti
+- 186 domande presenti: A 40, Appendice A 26, B 40, C 40, D 40.
+- 79 voci del syllabus presenti (6 capitoli).
+- Tutti i campi delle domande e le risposte, le risposte corrette e le spiegazioni
+  sono stati confrontati con l’originale: identici.
+- Tutti i campi del syllabus, compreso l’HTML delle pagine originali,
+  sono stati confrontati con l’originale: identici dopo la ricostruzione
+  degli indirizzi delle immagini.
+- 149 immagini estratte senza ricompressione: bytes identici alle URI
+  incorporate nell’HTML di partenza; SHA-256 verificati e file apribili.
+
+2. Struttura e codice
+- Tutti i percorsi CSS/JavaScript/immagini esistono e sono relativi,
+  compatibili con i percorsi dei repository GitHub Pages.
+- Verifica sintattica superata per tutti i 12 file JavaScript (node --check).
+- Nessuna dipendenza da librerie esterne o da fetch.
+- Corretto il layout dell’indice syllabus (contenitore a griglia e sidebar).
+- Corretto lo scorrimento durante il cambio argomento su PC e mobile.
+
+3. Prove funzionali browser
+- 58 test funzionali su Chromium desktop e viewport mobile: 58 superati.
+- Verificati: homepage, layout indice, navigazione, precedente/successivo,
+  scorrimento pagina, selezione risposte, tutti e 6 i tipi di simulazione,
+  conteggio domande, ritorno alla homepage e nessun errore JavaScript.
+- Limitazione di test: il browser dell’ambiente di esecuzione blocca
+  per policy l’accesso diretto a file:// e http://localhost.
+  La prova è stata eseguita caricando nel browser il medesimo HTML,
+  CSS, JS e dati, senza HTTP; l’integrità degli asset e dei riferimenti
+  è stata verificata separatamente. Un deployment live su GitHub Pages
+  non è stato effettuato e non viene dichiarato verificato.
+
+4. ZIP
+- Contenuto dell’archivio confrontato con tutti i 166 file prodotti
+  (incluso questo rapporto).
+- Integrità dei singoli file ZIP verificata con CRC.
