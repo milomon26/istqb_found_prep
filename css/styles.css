@@ -181,3 +181,51 @@ body.formula-view header #formulaBtn{background:#fff;color:#173454}
 @media(max-width:980px){.home-actions{grid-template-columns:repeat(2,minmax(0,1fr))}.home-card-exam{grid-column:1/-1;min-height:220px}.home-exam-controls{max-width:400px}}
 @media(max-width:850px){#formulasPage .formula-layout{grid-template-columns:minmax(0,1fr)}#formulaIndex{position:static;max-height:none;display:grid;grid-template-columns:repeat(2,minmax(0,1fr))}#formulasPage{padding:18px 12px}}
 @media(max-width:600px){.home-hero{padding:29px 21px}.home-actions{grid-template-columns:1fr}.home-card{min-height:0;padding:22px}.home-card-exam{grid-column:auto}.home-stats{gap:8px}.home-stats span{font-size:12px;padding:8px 10px}#formulaIndex{grid-template-columns:1fr 1fr;gap:4px;padding:6px}.formula-index-btn{font-size:12px;padding:10px 7px;gap:5px}.formula-topic{padding:6px 0}.formula-entry,.formula-question{padding:14px}.formula-entry .eq{font-size:17px}#formulasPage .formula-head h2{font-size:24px}}
+
+/* Formulario revisionato: testo del syllabus, spiegazioni guidate, matematica accessibile e mobile. */
+.formula-topic h3{font-size:clamp(26px,2.3vw,34px);line-height:1.22;margin:7px 0 9px}
+.formula-lesson-subtitle{font-size:18px;color:#37597e;font-weight:600;margin:0 0 11px}
+.formula-source{font-size:14px;line-height:1.5;padding-bottom:17px;border-bottom:1px solid #dde6f1}
+.formula-lesson-section{padding:26px 0 17px;border-bottom:1px solid #dbe4ee}
+.formula-lesson-section>h4{font-size:21px;color:#173c63;line-height:1.25;margin:0 0 14px}
+.formula-lesson-section>h5{font-size:17px;margin:12px 0}
+.formula-theory p{font-size:17px;line-height:1.8;color:#24364b;margin:0 0 14px}
+.formula-origin-note{font-size:14px;color:#66778d;line-height:1.6}
+.formula-official-quote{margin:15px 0;padding:17px 20px;background:#f7faff;border-left:4px solid #6c93c1;border-radius:0 9px 9px 0}
+.formula-official-quote p{font-size:16px;line-height:1.7;margin:0 0 9px}
+.formula-official-quote cite{font-size:13px;color:#547293;font-style:normal}
+.formula-open-syllabus{margin-top:11px}
+.formula-variables{display:grid;gap:9px;margin:16px 0}
+.formula-variable{display:grid;grid-template-columns:minmax(65px,85px) minmax(0,1fr);gap:14px;align-items:start;padding:13px 15px;background:#f7f9fc;border:1px solid #e0e7f0;border-radius:9px;line-height:1.55;font-size:15px}
+.formula-symbol{font-family:'Cambria Math',Cambria,Georgia,serif;font-size:23px;color:#193d68;font-weight:700;overflow-wrap:anywhere}
+.formula-entry{background:#fff;padding:22px 22px;margin:16px 0;border:1px solid #cbd9e9;box-shadow:0 3px 12px #14375b08}
+.formula-entry-top{display:flex;align-items:center;gap:8px 16px;flex-wrap:wrap;justify-content:space-between}
+.formula-entry-top h4{font-size:18px;margin:0;color:#1d3e62}
+.formula-kind{font-size:12px;font-weight:700;letter-spacing:.01em;color:#335c88;background:#ebf2fb;border-radius:100px;padding:6px 11px;line-height:1.35}
+.formula-kind-derived{background:#f0f2f5;color:#526174}
+.formula-note{color:#34475e;font-size:15px;line-height:1.75!important;margin:12px 0 0!important}
+.math-display{display:flex;gap:clamp(10px,2vw,19px);flex-wrap:wrap;align-items:center;justify-content:flex-start;width:100%;max-width:100%;padding:26px 20px;margin:19px 0 10px;background:#f2f6fc;border:1px solid #dee8f5;border-radius:12px;color:#132e54;font:normal clamp(24px,2.5vw,34px)/1.22 'Cambria Math',Cambria,Georgia,serif;letter-spacing:0;overflow-x:auto;overflow-y:hidden;font-variant-numeric:lining-nums}
+.math-lhs{flex:0 0 auto;font-weight:600;white-space:nowrap}
+.math-expression{overflow-wrap:normal;white-space:nowrap}
+.math-fraction{display:inline-flex;flex:0 1 auto;flex-direction:column;align-items:stretch;text-align:center;min-width:44px;max-width:100%;font-size:.92em;line-height:1.28}
+.math-numerator{display:block;padding:0 9px 7px;border-bottom:2px solid currentColor;overflow-wrap:break-word}
+.math-denominator{display:block;padding:7px 9px 0;overflow-wrap:break-word}
+.math-tail{white-space:nowrap}
+.formula-derived{padding:17px;background:#fbfcfe;border:1px solid #dce5ef;border-radius:12px;margin:20px 0}
+.formula-derived summary{cursor:pointer;font-size:16px;font-weight:750;color:#29486d}
+.formula-derived-note{line-height:1.7;color:#65748b;font-size:14px}
+.formula-derived .formula-entry{background:#fff}
+.worked-source{font-size:13px;color:#637b99}
+.worked-steps{display:grid;gap:10px}
+.worked-step{display:grid;grid-template-columns:30px minmax(0,1fr);gap:12px;align-items:start;padding:14px;border-radius:10px;border:1px solid #e0e8f2;background:#fafcff}
+.worked-step p{font-size:16px;line-height:1.7;margin:0;overflow-wrap:anywhere}
+.worked-number{display:flex;align-items:center;justify-content:center;width:30px;height:30px;border-radius:50%;background:#285b99;color:white;font-size:14px;font-weight:800}
+.formula-mistakes{padding-left:23px;margin:0}.formula-mistakes li{font-size:16px;line-height:1.7;margin:9px 0}
+.formula-question-actions{display:flex;flex-wrap:wrap;gap:10px;align-items:center;margin-top:14px}
+.formula-question-actions button{margin:0}
+.formula-answer{background:#f5f9fd;border-color:#c7d6ea}
+.formula-answer .explanation-intro,.wrong .explanation-intro{white-space:pre-wrap;line-height:1.75;font-size:16px;padding:15px 17px;border-radius:9px;background:#fff;border:1px solid #dce6ef;overflow-wrap:anywhere}
+.formula-answer .explanation-item{font-size:16px;line-height:1.6}
+@media(max-width:600px){.formula-lesson-section{padding:20px 0 13px}.formula-lesson-section>h4{font-size:19px}.formula-theory p{font-size:16px;line-height:1.72}.formula-entry{padding:15px 13px}.math-display{padding:21px 10px;font-size:clamp(20px,6vw,27px);gap:8px}.math-numerator{padding:0 4px 5px}.math-denominator{padding:5px 4px 0}.formula-variable{grid-template-columns:61px minmax(0,1fr);padding:11px}.formula-official-quote{padding:13px}.formula-topic h3{font-size:28px}.formula-question-actions button{width:100%}}
+
+.formula-source-links{display:flex;flex-wrap:wrap;gap:9px;margin-top:13px}.formula-source-links button{white-space:normal;text-align:left}

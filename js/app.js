@@ -15,8 +15,10 @@ function specialVisual(q){
 function active(){return list(mode)}function showMode(m){if(state)save();mode=m;state=load(mode);$('modes').innerHTML=MODES.map(([k,label])=>`<button class="${k===mode?'active':''}" data-mode="${k}">${label}</button>`).join('');$('modes').querySelectorAll('button').forEach(b=>b.onclick=()=>showMode(b.dataset.mode));render()}function render(){if(topicsVisible){$('exam').classList.add('hidden');$('results').classList.add('hidden');return}const qs=active(),total=qs.length;state.index=Math.min(Math.max(0,state.index),total-1);$('exam').classList.toggle('hidden',state.submitted||reviewing);$('results').classList.toggle('hidden',!state.submitted||reviewing);$('finishBtn').textContent='Consegna esame';$('clock').textContent=String(Math.floor(state.seconds/60)).padStart(2,'0')+':'+String(state.seconds%60).padStart(2,'0');$('clock').classList.toggle('low',state.seconds<300);$('pauseBtn').textContent=state.paused?'Riprendi':'Pausa';$('paused').classList.toggle('hidden',!state.paused||state.submitted);if(state.submitted){showResults();return}let q=qs[state.index];$('meta').textContent=`Domanda ${state.index+1} di ${total} · Fonte: Set ${q.source}, ${q.number.startsWith('A')?'Appendice A, domanda ':'domanda '}${q.number} · 1 punto`;$('sourceImage').innerHTML=images(q);const multi=q.correct.length>1;$('answerTitle').textContent=multi?'Seleziona '+q.correct.length+' risposte:':'Seleziona una risposta:';$('answers').innerHTML='';for(const letter of q.letters){let l=document.createElement('label');l.className='choice';let input=document.createElement('input');input.type=multi?'checkbox':'radio';input.name='answer';input.value=letter;input.checked=(state.answers[q.id]||[]).includes(letter);input.onchange=()=>{let current=state.answers[q.id]||[];if(!multi)current=[letter];else current=input.checked?[...current,letter]:current.filter(x=>x!==letter);state.answers[q.id]=current;save();render()};let letterSpan=document.createElement('span');letterSpan.className='choice-letter';letterSpan.textContent=letter.toUpperCase()+')';let answerSpan=document.createElement('span');answerSpan.className='choice-copy';answerSpan.textContent=(q.choiceText||{})[letter]||'[Testo della risposta non disponibile: verificare il PDF ufficiale]';l.append(input,letterSpan,answerSpan);$('answers').append(l)}$('prev').disabled=state.index===0;$('next').disabled=state.index===total-1;let completed=qs.filter(q=>(state.answers[q.id]||[]).length>0).length;$('count').textContent=`${completed}/${total} risposte · Soglia ${Math.ceil(total*.65)}/${total}`;$('fill').style.width=completed/total*100+'%';$('numbers').innerHTML='';qs.forEach((q,i)=>{let b=document.createElement('button');b.textContent=i+1;b.className=((state.answers[q.id]||[]).length?'done ':'')+(i===state.index?'active':'');b.onclick=()=>{state.index=i;save();render();window.scrollTo(0,0)};$('numbers').append(b)});save()}function finish(force=false){if(state.submitted)return;let qs=active(),unanswered=qs.filter(q=>!(state.answers[q.id]||[]).length).length;if(!force&&!confirm(unanswered?`Hai ${unanswered} domande senza risposta. Consegnare comunque?`:'Confermi la consegna? Dopo non potrai modificare le risposte.'))return;state.submitted=true;state.paused=false;save();render();window.scrollTo(0,0)}function formattedExplanation(raw){
  const source=String(raw||'');
  const matches=[...source.matchAll(/(?:^|\s)([a-d])\)\s+/gi)];
- if(matches.length<2)return `<p>${esc(source)}</p>`;
- let out='';
+ if(matches.length<2)return `<p class="explanation-intro">${esc(source)}</p>`;
+ // Non eliminare il ragionamento prima delle risposte a), b), c), d): include calcoli ufficiali.
+ const preamble=source.slice(0,matches[0].index).trim();
+ let out=preamble?`<div class="explanation-intro">${esc(preamble)}</div>`:'';
  for(let i=0;i<matches.length;i++){
   const m=matches[i],start=m.index+m[0].length,end=i+1<matches.length?matches[i+1].index:source.length;
   const part=source.slice(start,end).trim();
@@ -74,26 +76,8 @@ function openStudyPage(id){
 $('topicsBtn').onclick=openTopics;$('closeTopics').onclick=closeTopics;
 function reset(){if(!confirm('Vuoi ricominciare questa simulazione? Le risposte e il tempo salvati per questa modalità saranno azzerati.'))return;state=fresh(mode);save();render()}$('prev').onclick=()=>{state.index--;render();window.scrollTo(0,0)};$('next').onclick=()=>{state.index++;render();window.scrollTo(0,0)};$('finishBtn').onclick=()=>finish();$('resetBtn').onclick=reset;$('pauseBtn').onclick=()=>{if(state.submitted)return;state.paused=!state.paused;save();render()};$('resumeBtn').onclick=()=>{state.paused=false;save();render()};setInterval(()=>{if(!state||!state.started||state.submitted||state.paused||reviewing||document.body.classList.contains("home-view")||topicsVisible||formulaVisible)return;state.seconds=Math.max(0,state.seconds-1);if(state.seconds===0)finish(true);else{if(state.seconds%5===0)save();$('clock').textContent=String(Math.floor(state.seconds/60)).padStart(2,'0')+':'+String(state.seconds%60).padStart(2,'0');$('clock').classList.toggle('low',state.seconds<300)}},1000);
 
-// Formule già presenti nell'app originale. Le note non sostituiscono il syllabus.
-const FORMULA_PAGES = [
- {id:'three-point',title:'Stima a tre punti',source:'Syllabus §5.1.4',entries:[
-  ['Stima attesa','E = (a + 4m + b) / 6','a = stima più ottimistica, m = stima più probabile, b = stima più pessimistica. La stima più probabile pesa quattro volte le altre.','Syllabus §5.1.4'],
-  ['Deviazione standard stimata','SD = (b − a) / 6','Il syllabus illustra l’incertezza come E ± SD.','Syllabus §5.1.4'],
-  ['Stima a tre punti — formule inverse','a = 6E − 4m − b; m = (6E − a − b) / 4; b = 6E − a − 4m','Trasformazioni algebriche, non enunciate separatamente dal syllabus.','Derivate dalla formula di stima'],
-  ['Errore di misura — formule inverse','b = a + 6SD; a = b − 6SD','Per ricavare un valore estremo conoscendo l’altro e SD.','Derivate dalla formula SD']
- ],questions:['A-32']},
- {id:'risk',title:'Livello di rischio',source:'Syllabus §5.2',entries:[
-  ['Livello di rischio','R = P × I','R = livello di rischio, P = probabilità, I = impatto. Modello quantitativo semplificato: il syllabus descrive il livello in funzione dei due fattori senza imporre una scala unica.','Modello esemplificativo — §5.2'],
-  ['Formule inverse','P = R / I; I = R / P','Valide solo se il denominatore è diverso da zero e si applica il modello quantitativo.','Derivate dal modello R = P × I']
- ],questions:['D-34','A-35','A-A22']},
- {id:'coverage',title:'Calcolo della copertura',source:'Syllabus §4.2–4.3',entries:[
-  ['Copertura','Copertura (%) = (elementi esercitati / elementi totali) × 100','Numeratore e denominatore devono riferirsi allo stesso tipo di elementi di copertura.','Syllabus §4.2–4.3'],
-  ['Formule inverse','Elementi esercitati = (copertura % × elementi totali) / 100; elementi totali = (elementi esercitati × 100) / copertura %','Nella seconda formula il valore della copertura percentuale deve essere diverso da zero.','Derivate dalla definizione di copertura']
- ],questions:['B-25','B-24','A-24']},
- {id:'extrapolation',title:'Estrapolazione',source:'Simulazione ufficiale C · domanda 31',entries:[
-  ['Media ponderata delle iterazioni','E(n) = [3 × A(n−1) + A(n−2)] / 4','Formula specifica della domanda C-31: A(n−1) e A(n−2) sono il lavoro effettivo delle due iterazioni precedenti. Non è una regola generale prescritta dal syllabus.','Set C, domanda 31']
- ],questions:['C-31']}
-];
+// Lezioni verificate sul PDF CTFL v4.0.1; separazione dai dati ufficiali delle domande.
+const FORMULA_PAGES = window.ISTQB_FORMULA_LESSONS;
 let formulaVisible=false,currentFormulaId=FORMULA_PAGES[0].id;
 function renderFormulaIndex(){
  const sidebar=$('formulaIndex');const scroll=sidebar.scrollTop;
@@ -102,19 +86,51 @@ function renderFormulaIndex(){
 }
 function renderFormulaQuestion(q){
  const item=document.createElement('article');item.className='formula-question';item.dataset.question=q.id;
- item.innerHTML=`<div class="formula-question-meta">DOMANDA UFFICIALE · ${esc(q.id)} · ${esc(q.lo||'Appendice A')}</div>${images(q)}<div class="formula-choices">${q.letters.map(l=>`<label class="topic-choice"><input type="${q.correct.length>1?'checkbox':'radio'}" name="formula-${esc(q.id)}" value="${l}"><strong>${l.toUpperCase()})</strong><span>${esc(q.choiceText[l]||'')}</span></label>`).join('')}</div><button class="outline formula-check" type="button">Verifica la risposta</button><div class="formula-answer hidden" aria-live="polite"></div>`;
- item.querySelector('.formula-check').onclick=()=>{
+ item.innerHTML=`<div class="formula-question-meta">DOMANDA UFFICIALE · ${esc(q.id)} · ${esc(q.lo||'Appendice A')}</div>${images(q)}<div class="formula-choices">${q.letters.map(l=>`<label class="topic-choice"><input type="${q.correct.length>1?'checkbox':'radio'}" name="formula-${esc(q.id)}" value="${l}"><strong>${l.toUpperCase()})</strong><span>${esc(q.choiceText[l]||'')}</span></label>`).join('')}</div><div class="formula-question-actions"><button class="outline formula-check" type="button">Verifica la risposta</button><button class="light formula-reveal" type="button">Mostra spiegazione ufficiale</button></div><div class="formula-answer hidden" aria-live="polite"></div>`;
+ const show=(check)=>{
   const chosen=[...item.querySelectorAll('input:checked')].map(e=>e.value).sort().join(',');const expected=q.correct.slice().sort().join(',');
-  const result=item.querySelector('.formula-answer');result.classList.remove('hidden');result.innerHTML=`<div class="formula-answer-head">${chosen===expected?'Risposta corretta':'Risposta '+(chosen?'errata':'non selezionata')} · Soluzione: ${q.correct.join(', ').toUpperCase()}</div><h4>Spiegazione ufficiale</h4><div class="explain">${formattedExplanation(q.explanation)}</div>`;
+  const result=item.querySelector('.formula-answer');result.classList.remove('hidden');
+  const status=check?(chosen===expected?'Risposta corretta':'Risposta '+(chosen?'errata':'non selezionata')):'Soluzione ufficiale';
+  result.innerHTML=`<div class="formula-answer-head">${status} · Soluzione: ${q.correct.join(', ').toUpperCase()}</div><h4>Giustificazione ufficiale integrale</h4><div class="explain">${formattedExplanation(q.explanation)}</div>`;
+  item.querySelector('.formula-reveal').textContent='Spiegazione ufficiale visualizzata';
  };
+ if(q.officialImage){const figure=item.querySelector('.figure-reference');if(figure)figure.open=true;}
+ item.querySelector('.formula-check').onclick=()=>show(true);
+ item.querySelector('.formula-reveal').onclick=()=>show(false);
  return item;
 }
+function formulaMath(f){
+ const expression=f.num!==undefined
+  ?`<span class="math-fraction"><span class="math-numerator">${esc(f.num)}</span><span class="math-denominator">${esc(f.den)}</span></span>`
+  :`<span class="math-expression">${esc(f.expression||'')}</span>`;
+ return `<div class="math-display" role="math" aria-label="${esc(f.lhs+' '+(f.num!==undefined?'('+f.num+') diviso ('+f.den+')':' '+(f.expression||''))+(f.tail||''))}"><span class="math-lhs">${esc(f.lhs)}</span>${expression}${f.tail?`<span class="math-tail">${esc(f.tail)}</span>`:''}</div>`;
+}
+function formulaCard(f,kind){
+ return `<article class="formula-entry"><div class="formula-entry-top"><h4>${esc(f.title)}</h4><span class="formula-kind ${kind==='derived'?'formula-kind-derived':''}">${esc(f.origin||'Trasformazione algebrica derivata')}</span></div>${formulaMath(f)}${f.note?`<p class="formula-note">${esc(f.note)}</p>`:''}</article>`;
+}
+function renderTeachingPage(f,i){
+ const quote=f.official.map(o=>`<blockquote class="formula-official-quote"><p>${esc(o.text)}</p><cite>${esc(o.reference)}</cite></blockquote>`).join('');
+ const theory=f.theory.map(p=>`<p>${esc(p)}</p>`).join('');
+ const variables=f.variables.map(([k,v])=>`<div class="formula-variable"><span class="formula-symbol">${esc(k)}</span><span>${esc(v)}</span></div>`).join('');
+ const formulae=f.formulas.map(x=>formulaCard(x,'official')).join('');
+ const example=f.worked.steps.map((s,n)=>`<div class="worked-step"><span class="worked-number">${n+1}</span><p>${esc(s)}</p></div>`).join('');
+ const inverses=f.derived.length?`<details class="formula-derived"><summary>Formule inverse e trasformazioni algebriche (${f.derived.length})</summary><p class="formula-derived-note">Ricavate matematicamente dalle formule indicate; non sono enunciati separati del syllabus ISTQB.</p>${f.derived.map(x=>formulaCard(x,'derived')).join('')}</details>`:'';
+ return `<div class="formula-page-count">ARGOMENTO ${idxLabel(i)} / ${FORMULA_PAGES.length}</div><h3>${esc(f.title)}</h3><p class="formula-lesson-subtitle">${esc(f.subtitle)}</p><div class="formula-source">${esc(f.source)}</div>
+ <section class="formula-lesson-section"><h4>1. Che cosa significa questo argomento</h4><div class="formula-theory">${theory}</div></section>
+ <section class="formula-lesson-section"><h4>2. Che cosa dice il syllabus ufficiale</h4><p class="formula-origin-note">Estratti testuali dal documento CTFL v4.0.1. La spiegazione didattica delle altre sezioni è distinta dalle citazioni.</p>${quote}<div class="formula-source-links">${f.syllabusIds.map(sectionId=>`<button class="outline formula-open-syllabus" type="button" data-syllabus="${esc(sectionId)}">Apri §${esc(sectionId)} nel syllabus →</button>`).join('')}</div></section>
+ <section class="formula-lesson-section"><h4>3. Come leggere i simboli</h4><div class="formula-variables">${variables}</div></section>
+ <section class="formula-lesson-section"><h4>4. Le formule spiegate</h4>${formulae}${inverses}</section>
+ <section class="formula-lesson-section"><h4>5. Calcolo svolto passo per passo</h4><p class="worked-source">${esc(f.worked.source)}</p><h5>${esc(f.worked.title)}</h5><div class="worked-steps">${example}</div></section>
+ <section class="formula-lesson-section"><h4>6. Errori da evitare</h4><ul class="formula-mistakes">${f.mistakes.map(x=>`<li>${esc(x)}</li>`).join('')}</ul></section>
+ <div class="formula-exercises"><h3>7. Domande delle simulazioni ufficiali</h3><p class="sub">Testo e opzioni originali, con giustificazioni ufficiali integrali. Puoi mostrare subito la spiegazione oppure rispondere e verificare. Le risposte qui non cambiano la simulazione.</p></div>`;
+}
+function idxLabel(i){return String(i+1).padStart(2,'0')}
 function openFormula(id){
  const idx=FORMULA_PAGES.findIndex(f=>f.id===id);if(idx<0)return;
  currentFormulaId=id;renderFormulaIndex();const f=FORMULA_PAGES[idx],holder=$('formulaSections');holder.innerHTML='';
- const page=document.createElement('article');page.className='formula-topic';
- page.innerHTML=`<div class="formula-page-count">FORMULA ${idx+1} / ${FORMULA_PAGES.length}</div><h3>${esc(f.title)}</h3><p class="formula-source">${esc(f.source)}</p>${f.entries.map(e=>`<section class="formula-entry"><h4>${esc(e[0])}</h4><div class="eq">${esc(e[1])}</div><p>${esc(e[2])}</p><p class="formula-provenance">${esc(e[3])}</p></section>`).join('')}<div class="formula-exercises"><h3>Domande delle simulazioni ufficiali</h3><p class="sub">Rispondi, poi verifica: viene mostrata la spiegazione riportata nella soluzione ufficiale. Il formulario non altera le risposte delle simulazioni d’esame.</p></div>`;
+ const page=document.createElement('article');page.className='formula-topic';page.innerHTML=renderTeachingPage(f,idx);
  const ex=page.querySelector('.formula-exercises');for(const qid of f.questions){const q=lookup[qid];if(q)ex.append(renderFormulaQuestion(q));}
+ page.querySelectorAll('.formula-open-syllabus').forEach(b=>b.onclick=()=>{showStudy();openStudyPage(b.dataset.syllabus)});
  const nav=document.createElement('div');nav.className='study-nav';nav.innerHTML=`<button id="formulaPrev" class="light" ${idx===0?'disabled':''}>← Precedente</button><button id="formulaNext" ${idx===FORMULA_PAGES.length-1?'disabled':''}>Successiva →</button><button id="formulaHome" class="outline">Homepage</button>`;
  page.append(nav);holder.append(page);$('formulaPrev').onclick=()=>openFormula(FORMULA_PAGES[idx-1].id);$('formulaNext').onclick=()=>openFormula(FORMULA_PAGES[idx+1].id);$('formulaHome').onclick=showHome;
  const top=page.getBoundingClientRect().top+window.scrollY-document.querySelector('header').offsetHeight-12;

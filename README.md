@@ -1,34 +1,47 @@
-# ISTQB CTFL 4.0 — Pacchetto corretto per GitHub Pages
+# ISTQB CTFL 4.0.1 – Studio, formulario e simulazioni
 
-## Come aggiornare il repository con GitHub Desktop
+**Versione: formulario approfondito, 19 ottobre 2026.**
 
-1. Estrai lo ZIP in una cartella del PC.
-2. In GitHub Desktop apri il repository e scegli **Repository → Show in Explorer**.
-3. Copia **il contenuto** della cartella estratta (file `index.html`, `css`, `js`, `assets`, report ed eventuali altri file) dentro la cartella principale del repository. Conferma la **sostituzione** dei file già esistenti.
-4. Torna in GitHub Desktop → scheda **Changes**. Verifica che ci siano modifiche a `index.html`, `css/styles.css`, `js/app.js` e ai tre dataset delle domande interessate.
-5. Inserisci un riepilogo come `ISTQB: correzioni e nuovo formulario`, scegli **Commit to main**, quindi **Push origin**.
-6. Apri GitHub → **Settings → Pages**; verifica che il deploy usi `main` e `/(root)` e controlla la pubblicazione.
+Questa cartella costituisce l'intero sito statico per GitHub Pages.
 
-**Importante:** carica tutti i file e le sottocartelle, **non** il file `.zip` come unico elemento. Non cancellare `assets`, `css` o `js`.
+## Aprire il sito
 
-## Che cosa cambia
+Per pubblicare, estrarre lo ZIP e copiare **tutti i file e le cartelle interne** nella cartella principale del repository GitHub Desktop. Conservare `index.html`, `css/`, `js/`, `assets/` e i file connessi nella stessa struttura. In GitHub Desktop: *Commit to main*, poi *Push origin*.
 
-- 4 defect corretti: apostrofi (`undefined`), chiave A-A21, testi estranei in A-40 e B-40.
-- Rimossa la funzione tecnica «Verifica formattazioni».
-- Formulario a pagina intera, con indice e 8 domande ufficiali corredate delle spiegazioni delle soluzioni.
-- Homepage rinnovata e pulsante «Inizia simulazione» separato dal menu a tendina.
-- Conservati 186 quesiti, 79 voci syllabus e 149 immagini; **le sole modifiche al dataset** sono documentate nel report QA.
+Il progetto non richiede librerie esterne o servizi online per la pagina di studio.
 
-La fonte `ITASTQB-QTEST-FL-2023-A-SOL.pdf`, pagina 41, contiene una contraddizione tra tabella riassuntiva (B) e spiegazione (A) per la domanda aggiuntiva A21. L'app usa A, coerentemente con la spiegazione; vedi `RAPPORTO_QA_CORREZIONI.md`.
+## Formulario rinnovato
 
-## Struttura
+Le quattro sezioni (stima a tre punti, livello di rischio, calcolo della copertura, estrapolazione) ora comprendono:
 
-- `index.html` — pagina principale.
-- `css/styles.css` — stili.
-- `js/app.js` — logica app, syllabus, formulario, timer e quiz.
-- `js/data/domande-*.js` — 186 domande per set.
-- `js/data/syllabus-capitolo-*.js` — 79 voci del syllabus.
-- `assets/questions/` e `assets/syllabus/` — 149 immagini, non ricompressi.
-- `RAPPORTO_QA_CORREZIONI.md`, `VERIFICHE.txt` e `QA_EVIDENZE_*.json` — rapporto di test ed evidenze.
+1. Che cosa significa il concetto: spiegazione didattica basata sul syllabus.
+2. Citazioni testuali con paragrafo e pagina verificati contro il PDF italiano CTFL v4.0.1.
+3. Legenda delle variabili.
+4. Formule leggibili con frazioni impaginate e indicazione del tipo di fonte.
+5. Calcolo svolto, dal syllabus o dalla soluzione ufficiale (oppure segnalato come esempio didattico).
+6. Errori tipici da evitare.
+7. Domande ufficiali collegate e spiegazioni **integrali**, comprese le premesse con i calcoli prima delle opzioni.
 
-Non ci sono librerie esterne, CDN o build step: GitHub Pages distribuisce direttamente i file statici.
+Le **formule inverse** sono chiaramente classificate come trasformazioni algebriche derivate, non come enunciati autonomi del syllabus. La **formula di C-31** è identificata come modello specifico della domanda, non formula generale della tecnica di estrapolazione.
+
+Puoi aprire i paragrafi esatti del syllabus dall'argomento del formulario. Le spiegazioni delle soluzioni possono essere aperte direttamente, senza dover rispondere prima.
+
+## Integrità
+
+Questa revisione **non modifica** i cinque file delle domande, le sei parti del syllabus, né i 149 asset originali rispetto alla versione precedente corretta.
+
+I quattro defect storici BUG-01–BUG-04 rimangono corretti. È stato inoltre corretto il nuovo **BUG-05**, che eliminava la premessa della spiegazione prima delle risposte a), b), c), d).
+
+## Test eseguiti
+
+- `QA_EVIDENZE_BROWSER.json`: 310 controlli superati su viewport desktop e mobile Chromium.
+- `QA_FORMULARIO_MIRATO.json`: 132 controlli mirati superati, inclusa la visibilità delle premesse ufficiali.
+- `QA_VERIFICHE_STATICHE.json`: 55 controlli statici superati, inclusi gli estratti letterali e gli asset.
+- `RAPPORTO_QA_FORMULARIO.md`: descrizione dei test, dei defect e delle limitazioni.
+
+I conteggi comprendono verifiche parzialmente sovrapposte; non rappresentano 497 requisiti indipendenti. GitHub Pages pubblicato e Safari/iOS reali **non** sono stati collaudati.
+
+## Fonti
+
+- ISTQB CTFL Syllabus italiano v4.0.1, §§ 4.2.1, 4.2.2, 4.3.1, 4.3.2, 5.1.4, 5.2.1 e 5.2.3 (pagine 43–46 e 54–58).
+- PDF delle simulazioni A, Appendice A, B, C e D e relative giustificazioni delle risposte.

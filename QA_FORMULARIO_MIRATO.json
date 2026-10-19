@@ -1,0 +1,662 @@
+[
+  {
+    "name": "immutate domande domande-a.js",
+    "pass": true,
+    "detail": ""
+  },
+  {
+    "name": "immutate domande domande-appendice-a.js",
+    "pass": true,
+    "detail": ""
+  },
+  {
+    "name": "immutate domande domande-b.js",
+    "pass": true,
+    "detail": ""
+  },
+  {
+    "name": "immutate domande domande-c.js",
+    "pass": true,
+    "detail": ""
+  },
+  {
+    "name": "immutate domande domande-d.js",
+    "pass": true,
+    "detail": ""
+  },
+  {
+    "name": "immutato syllabus syllabus-capitolo-1.js",
+    "pass": true,
+    "detail": ""
+  },
+  {
+    "name": "immutato syllabus syllabus-capitolo-2.js",
+    "pass": true,
+    "detail": ""
+  },
+  {
+    "name": "immutato syllabus syllabus-capitolo-3.js",
+    "pass": true,
+    "detail": ""
+  },
+  {
+    "name": "immutato syllabus syllabus-capitolo-4.js",
+    "pass": true,
+    "detail": ""
+  },
+  {
+    "name": "immutato syllabus syllabus-capitolo-5.js",
+    "pass": true,
+    "detail": ""
+  },
+  {
+    "name": "immutato syllabus syllabus-capitolo-6.js",
+    "pass": true,
+    "detail": ""
+  },
+  {
+    "name": "tutte immagini originali identiche",
+    "pass": true,
+    "detail": ""
+  },
+  {
+    "name": "riferimento css/styles.css",
+    "pass": true,
+    "detail": ""
+  },
+  {
+    "name": "riferimento js/data/domande-a.js",
+    "pass": true,
+    "detail": ""
+  },
+  {
+    "name": "riferimento js/data/domande-appendice-a.js",
+    "pass": true,
+    "detail": ""
+  },
+  {
+    "name": "riferimento js/data/domande-b.js",
+    "pass": true,
+    "detail": ""
+  },
+  {
+    "name": "riferimento js/data/domande-c.js",
+    "pass": true,
+    "detail": ""
+  },
+  {
+    "name": "riferimento js/data/domande-d.js",
+    "pass": true,
+    "detail": ""
+  },
+  {
+    "name": "riferimento js/data/syllabus-capitolo-1.js",
+    "pass": true,
+    "detail": ""
+  },
+  {
+    "name": "riferimento js/data/syllabus-capitolo-2.js",
+    "pass": true,
+    "detail": ""
+  },
+  {
+    "name": "riferimento js/data/syllabus-capitolo-3.js",
+    "pass": true,
+    "detail": ""
+  },
+  {
+    "name": "riferimento js/data/syllabus-capitolo-4.js",
+    "pass": true,
+    "detail": ""
+  },
+  {
+    "name": "riferimento js/data/syllabus-capitolo-5.js",
+    "pass": true,
+    "detail": ""
+  },
+  {
+    "name": "riferimento js/data/syllabus-capitolo-6.js",
+    "pass": true,
+    "detail": ""
+  },
+  {
+    "name": "riferimento js/data/formulario-spiegato.js",
+    "pass": true,
+    "detail": ""
+  },
+  {
+    "name": "riferimento js/app.js",
+    "pass": true,
+    "detail": ""
+  },
+  {
+    "name": "desktop three-point teoria",
+    "pass": true,
+    "detail": ""
+  },
+  {
+    "name": "desktop three-point citazioni ufficiali",
+    "pass": true,
+    "detail": ""
+  },
+  {
+    "name": "desktop three-point simboli",
+    "pass": true,
+    "detail": ""
+  },
+  {
+    "name": "desktop three-point formule visibili",
+    "pass": true,
+    "detail": ""
+  },
+  {
+    "name": "desktop three-point esempio svolto",
+    "pass": true,
+    "detail": ""
+  },
+  {
+    "name": "desktop three-point errori da evitare",
+    "pass": true,
+    "detail": ""
+  },
+  {
+    "name": "desktop three-point domanda A-32",
+    "pass": true,
+    "detail": ""
+  },
+  {
+    "name": "desktop three-point spiegazione completa A-32",
+    "pass": true,
+    "detail": "La tecnica di stima dei tre punti che considera l’errore di misura è l"
+  },
+  {
+    "name": "desktop three-point premessa conservata A-32",
+    "pass": true,
+    "detail": "La tecnica di stima dei tre punti che considera l’errore di misura è la distribu"
+  },
+  {
+    "name": "desktop three-point senza overflow orizzontale",
+    "pass": true,
+    "detail": "[1440, 1440]"
+  },
+  {
+    "name": "desktop three-point dimensione formula leggibile",
+    "pass": true,
+    "detail": ""
+  },
+  {
+    "name": "desktop collegamento al syllabus ufficiale",
+    "pass": true,
+    "detail": ""
+  },
+  {
+    "name": "desktop risk teoria",
+    "pass": true,
+    "detail": ""
+  },
+  {
+    "name": "desktop risk citazioni ufficiali",
+    "pass": true,
+    "detail": ""
+  },
+  {
+    "name": "desktop risk simboli",
+    "pass": true,
+    "detail": ""
+  },
+  {
+    "name": "desktop risk formule visibili",
+    "pass": true,
+    "detail": ""
+  },
+  {
+    "name": "desktop risk esempio svolto",
+    "pass": true,
+    "detail": ""
+  },
+  {
+    "name": "desktop risk errori da evitare",
+    "pass": true,
+    "detail": ""
+  },
+  {
+    "name": "desktop risk domanda D-34",
+    "pass": true,
+    "detail": ""
+  },
+  {
+    "name": "desktop risk spiegazione completa D-34",
+    "pass": true,
+    "detail": "La valutazione del rischio può utilizzare un approccio quantitativo o "
+  },
+  {
+    "name": "desktop risk premessa conservata D-34",
+    "pass": true,
+    "detail": "La valutazione del rischio può utilizzare un approccio quantitativo o qualitativ"
+  },
+  {
+    "name": "desktop risk domanda A-35",
+    "pass": true,
+    "detail": ""
+  },
+  {
+    "name": "desktop risk spiegazione completa A-35",
+    "pass": true,
+    "detail": "A)\nNon è corretta. Non si accetta il rischio; sono state proposte azio"
+  },
+  {
+    "name": "desktop risk domanda A-A22",
+    "pass": true,
+    "detail": ""
+  },
+  {
+    "name": "desktop risk spiegazione completa A-A22",
+    "pass": true,
+    "detail": "A)\nNon è corretta. L'impatto e la probabilità del rischio sono indipen"
+  },
+  {
+    "name": "desktop risk senza overflow orizzontale",
+    "pass": true,
+    "detail": "[1440, 1440]"
+  },
+  {
+    "name": "desktop risk dimensione formula leggibile",
+    "pass": true,
+    "detail": ""
+  },
+  {
+    "name": "desktop coverage teoria",
+    "pass": true,
+    "detail": ""
+  },
+  {
+    "name": "desktop coverage citazioni ufficiali",
+    "pass": true,
+    "detail": ""
+  },
+  {
+    "name": "desktop coverage simboli",
+    "pass": true,
+    "detail": ""
+  },
+  {
+    "name": "desktop coverage formule visibili",
+    "pass": true,
+    "detail": ""
+  },
+  {
+    "name": "desktop coverage esempio svolto",
+    "pass": true,
+    "detail": ""
+  },
+  {
+    "name": "desktop coverage errori da evitare",
+    "pass": true,
+    "detail": ""
+  },
+  {
+    "name": "desktop coverage domanda B-25",
+    "pass": true,
+    "detail": ""
+  },
+  {
+    "name": "desktop coverage spiegazione completa B-25",
+    "pass": true,
+    "detail": "Il testing dei rami è una tecnica di test white-box in cui gli element"
+  },
+  {
+    "name": "desktop coverage domanda B-24",
+    "pass": true,
+    "detail": ""
+  },
+  {
+    "name": "desktop coverage spiegazione completa B-24",
+    "pass": true,
+    "detail": "A)\nNon è corretta. La copertura è sempre definita come percentuale deg"
+  },
+  {
+    "name": "desktop coverage domanda A-24",
+    "pass": true,
+    "detail": ""
+  },
+  {
+    "name": "desktop coverage spiegazione completa A-24",
+    "pass": true,
+    "detail": "A)\nÈ corretta. Poiché è stato raggiunto il 100% di copertura delle ist"
+  },
+  {
+    "name": "desktop coverage senza overflow orizzontale",
+    "pass": true,
+    "detail": "[1440, 1440]"
+  },
+  {
+    "name": "desktop coverage dimensione formula leggibile",
+    "pass": true,
+    "detail": ""
+  },
+  {
+    "name": "desktop extrapolation teoria",
+    "pass": true,
+    "detail": ""
+  },
+  {
+    "name": "desktop extrapolation citazioni ufficiali",
+    "pass": true,
+    "detail": ""
+  },
+  {
+    "name": "desktop extrapolation simboli",
+    "pass": true,
+    "detail": ""
+  },
+  {
+    "name": "desktop extrapolation formule visibili",
+    "pass": true,
+    "detail": ""
+  },
+  {
+    "name": "desktop extrapolation esempio svolto",
+    "pass": true,
+    "detail": ""
+  },
+  {
+    "name": "desktop extrapolation errori da evitare",
+    "pass": true,
+    "detail": ""
+  },
+  {
+    "name": "desktop extrapolation domanda C-31",
+    "pass": true,
+    "detail": ""
+  },
+  {
+    "name": "desktop extrapolation spiegazione completa C-31",
+    "pass": true,
+    "detail": "Dal grafico abbiamo: A(4)=6 e A(3)=8 (le ultime due colonne grigie) Da"
+  },
+  {
+    "name": "desktop extrapolation premessa conservata C-31",
+    "pass": true,
+    "detail": "Dal grafico abbiamo: A(4)=6 e A(3)=8 (le ultime due colonne grigie) Dalla formul"
+  },
+  {
+    "name": "desktop extrapolation senza overflow orizzontale",
+    "pass": true,
+    "detail": "[1440, 1440]"
+  },
+  {
+    "name": "desktop extrapolation dimensione formula leggibile",
+    "pass": true,
+    "detail": ""
+  },
+  {
+    "name": "desktop nessun errore JS",
+    "pass": true,
+    "detail": "[]"
+  },
+  {
+    "name": "mobile three-point teoria",
+    "pass": true,
+    "detail": ""
+  },
+  {
+    "name": "mobile three-point citazioni ufficiali",
+    "pass": true,
+    "detail": ""
+  },
+  {
+    "name": "mobile three-point simboli",
+    "pass": true,
+    "detail": ""
+  },
+  {
+    "name": "mobile three-point formule visibili",
+    "pass": true,
+    "detail": ""
+  },
+  {
+    "name": "mobile three-point esempio svolto",
+    "pass": true,
+    "detail": ""
+  },
+  {
+    "name": "mobile three-point errori da evitare",
+    "pass": true,
+    "detail": ""
+  },
+  {
+    "name": "mobile three-point domanda A-32",
+    "pass": true,
+    "detail": ""
+  },
+  {
+    "name": "mobile three-point spiegazione completa A-32",
+    "pass": true,
+    "detail": "La tecnica di stima dei tre punti che considera l’errore di misura è l"
+  },
+  {
+    "name": "mobile three-point premessa conservata A-32",
+    "pass": true,
+    "detail": "La tecnica di stima dei tre punti che considera l’errore di misura è la distribu"
+  },
+  {
+    "name": "mobile three-point senza overflow orizzontale",
+    "pass": true,
+    "detail": "[390, 390]"
+  },
+  {
+    "name": "mobile three-point dimensione formula leggibile",
+    "pass": true,
+    "detail": ""
+  },
+  {
+    "name": "mobile collegamento al syllabus ufficiale",
+    "pass": true,
+    "detail": ""
+  },
+  {
+    "name": "mobile risk teoria",
+    "pass": true,
+    "detail": ""
+  },
+  {
+    "name": "mobile risk citazioni ufficiali",
+    "pass": true,
+    "detail": ""
+  },
+  {
+    "name": "mobile risk simboli",
+    "pass": true,
+    "detail": ""
+  },
+  {
+    "name": "mobile risk formule visibili",
+    "pass": true,
+    "detail": ""
+  },
+  {
+    "name": "mobile risk esempio svolto",
+    "pass": true,
+    "detail": ""
+  },
+  {
+    "name": "mobile risk errori da evitare",
+    "pass": true,
+    "detail": ""
+  },
+  {
+    "name": "mobile risk domanda D-34",
+    "pass": true,
+    "detail": ""
+  },
+  {
+    "name": "mobile risk spiegazione completa D-34",
+    "pass": true,
+    "detail": "La valutazione del rischio può utilizzare un approccio quantitativo o "
+  },
+  {
+    "name": "mobile risk premessa conservata D-34",
+    "pass": true,
+    "detail": "La valutazione del rischio può utilizzare un approccio quantitativo o qualitativ"
+  },
+  {
+    "name": "mobile risk domanda A-35",
+    "pass": true,
+    "detail": ""
+  },
+  {
+    "name": "mobile risk spiegazione completa A-35",
+    "pass": true,
+    "detail": "A)\nNon è corretta. Non si accetta il rischio; sono state proposte azio"
+  },
+  {
+    "name": "mobile risk domanda A-A22",
+    "pass": true,
+    "detail": ""
+  },
+  {
+    "name": "mobile risk spiegazione completa A-A22",
+    "pass": true,
+    "detail": "A)\nNon è corretta. L'impatto e la probabilità del rischio sono indipen"
+  },
+  {
+    "name": "mobile risk senza overflow orizzontale",
+    "pass": true,
+    "detail": "[390, 390]"
+  },
+  {
+    "name": "mobile risk dimensione formula leggibile",
+    "pass": true,
+    "detail": ""
+  },
+  {
+    "name": "mobile coverage teoria",
+    "pass": true,
+    "detail": ""
+  },
+  {
+    "name": "mobile coverage citazioni ufficiali",
+    "pass": true,
+    "detail": ""
+  },
+  {
+    "name": "mobile coverage simboli",
+    "pass": true,
+    "detail": ""
+  },
+  {
+    "name": "mobile coverage formule visibili",
+    "pass": true,
+    "detail": ""
+  },
+  {
+    "name": "mobile coverage esempio svolto",
+    "pass": true,
+    "detail": ""
+  },
+  {
+    "name": "mobile coverage errori da evitare",
+    "pass": true,
+    "detail": ""
+  },
+  {
+    "name": "mobile coverage domanda B-25",
+    "pass": true,
+    "detail": ""
+  },
+  {
+    "name": "mobile coverage spiegazione completa B-25",
+    "pass": true,
+    "detail": "Il testing dei rami è una tecnica di test white-box in cui gli element"
+  },
+  {
+    "name": "mobile coverage domanda B-24",
+    "pass": true,
+    "detail": ""
+  },
+  {
+    "name": "mobile coverage spiegazione completa B-24",
+    "pass": true,
+    "detail": "A)\nNon è corretta. La copertura è sempre definita come percentuale deg"
+  },
+  {
+    "name": "mobile coverage domanda A-24",
+    "pass": true,
+    "detail": ""
+  },
+  {
+    "name": "mobile coverage spiegazione completa A-24",
+    "pass": true,
+    "detail": "A)\nÈ corretta. Poiché è stato raggiunto il 100% di copertura delle ist"
+  },
+  {
+    "name": "mobile coverage senza overflow orizzontale",
+    "pass": true,
+    "detail": "[390, 390]"
+  },
+  {
+    "name": "mobile coverage dimensione formula leggibile",
+    "pass": true,
+    "detail": ""
+  },
+  {
+    "name": "mobile extrapolation teoria",
+    "pass": true,
+    "detail": ""
+  },
+  {
+    "name": "mobile extrapolation citazioni ufficiali",
+    "pass": true,
+    "detail": ""
+  },
+  {
+    "name": "mobile extrapolation simboli",
+    "pass": true,
+    "detail": ""
+  },
+  {
+    "name": "mobile extrapolation formule visibili",
+    "pass": true,
+    "detail": ""
+  },
+  {
+    "name": "mobile extrapolation esempio svolto",
+    "pass": true,
+    "detail": ""
+  },
+  {
+    "name": "mobile extrapolation errori da evitare",
+    "pass": true,
+    "detail": ""
+  },
+  {
+    "name": "mobile extrapolation domanda C-31",
+    "pass": true,
+    "detail": ""
+  },
+  {
+    "name": "mobile extrapolation spiegazione completa C-31",
+    "pass": true,
+    "detail": "Dal grafico abbiamo: A(4)=6 e A(3)=8 (le ultime due colonne grigie) Da"
+  },
+  {
+    "name": "mobile extrapolation premessa conservata C-31",
+    "pass": true,
+    "detail": "Dal grafico abbiamo: A(4)=6 e A(3)=8 (le ultime due colonne grigie) Dalla formul"
+  },
+  {
+    "name": "mobile extrapolation senza overflow orizzontale",
+    "pass": true,
+    "detail": "[390, 390]"
+  },
+  {
+    "name": "mobile extrapolation dimensione formula leggibile",
+    "pass": true,
+    "detail": ""
+  },
+  {
+    "name": "mobile nessun errore JS",
+    "pass": true,
+    "detail": "[]"
+  }
+]

@@ -1,0 +1,277 @@
+[
+  {
+    "test": "Sintassi js/app.js",
+    "status": "PASS",
+    "detail": ""
+  },
+  {
+    "test": "Sintassi js/data/syllabus-capitolo-5.js",
+    "status": "PASS",
+    "detail": ""
+  },
+  {
+    "test": "Sintassi js/data/formulario-spiegato.js",
+    "status": "PASS",
+    "detail": ""
+  },
+  {
+    "test": "Sintassi js/data/domande-c.js",
+    "status": "PASS",
+    "detail": ""
+  },
+  {
+    "test": "Sintassi js/data/syllabus-capitolo-3.js",
+    "status": "PASS",
+    "detail": ""
+  },
+  {
+    "test": "Sintassi js/data/domande-b.js",
+    "status": "PASS",
+    "detail": ""
+  },
+  {
+    "test": "Sintassi js/data/syllabus-capitolo-1.js",
+    "status": "PASS",
+    "detail": ""
+  },
+  {
+    "test": "Sintassi js/data/syllabus-capitolo-6.js",
+    "status": "PASS",
+    "detail": ""
+  },
+  {
+    "test": "Sintassi js/data/domande-a.js",
+    "status": "PASS",
+    "detail": ""
+  },
+  {
+    "test": "Sintassi js/data/domande-appendice-a.js",
+    "status": "PASS",
+    "detail": ""
+  },
+  {
+    "test": "Sintassi js/data/syllabus-capitolo-4.js",
+    "status": "PASS",
+    "detail": ""
+  },
+  {
+    "test": "Sintassi js/data/syllabus-capitolo-2.js",
+    "status": "PASS",
+    "detail": ""
+  },
+  {
+    "test": "Sintassi js/data/domande-d.js",
+    "status": "PASS",
+    "detail": ""
+  },
+  {
+    "test": "file non vuoto index.html",
+    "status": "PASS",
+    "detail": ""
+  },
+  {
+    "test": "file non vuoto js/app.js",
+    "status": "PASS",
+    "detail": ""
+  },
+  {
+    "test": "file non vuoto css/styles.css",
+    "status": "PASS",
+    "detail": ""
+  },
+  {
+    "test": "file non vuoto js/data/syllabus-capitolo-5.js",
+    "status": "PASS",
+    "detail": ""
+  },
+  {
+    "test": "file non vuoto js/data/formulario-spiegato.js",
+    "status": "PASS",
+    "detail": ""
+  },
+  {
+    "test": "file non vuoto js/data/domande-c.js",
+    "status": "PASS",
+    "detail": ""
+  },
+  {
+    "test": "file non vuoto js/data/syllabus-capitolo-3.js",
+    "status": "PASS",
+    "detail": ""
+  },
+  {
+    "test": "file non vuoto js/data/domande-b.js",
+    "status": "PASS",
+    "detail": ""
+  },
+  {
+    "test": "file non vuoto js/data/syllabus-capitolo-1.js",
+    "status": "PASS",
+    "detail": ""
+  },
+  {
+    "test": "file non vuoto js/data/syllabus-capitolo-6.js",
+    "status": "PASS",
+    "detail": ""
+  },
+  {
+    "test": "file non vuoto js/data/domande-a.js",
+    "status": "PASS",
+    "detail": ""
+  },
+  {
+    "test": "file non vuoto js/data/domande-appendice-a.js",
+    "status": "PASS",
+    "detail": ""
+  },
+  {
+    "test": "file non vuoto js/data/syllabus-capitolo-4.js",
+    "status": "PASS",
+    "detail": ""
+  },
+  {
+    "test": "file non vuoto js/data/syllabus-capitolo-2.js",
+    "status": "PASS",
+    "detail": ""
+  },
+  {
+    "test": "file non vuoto js/data/domande-d.js",
+    "status": "PASS",
+    "detail": ""
+  },
+  {
+    "test": "Dataset immutato domande-a.js",
+    "status": "PASS",
+    "detail": ""
+  },
+  {
+    "test": "Dataset immutato domande-appendice-a.js",
+    "status": "PASS",
+    "detail": ""
+  },
+  {
+    "test": "Dataset immutato domande-b.js",
+    "status": "PASS",
+    "detail": ""
+  },
+  {
+    "test": "Dataset immutato domande-c.js",
+    "status": "PASS",
+    "detail": ""
+  },
+  {
+    "test": "Dataset immutato domande-d.js",
+    "status": "PASS",
+    "detail": ""
+  },
+  {
+    "test": "Syllabus immutato syllabus-capitolo-5.js",
+    "status": "PASS",
+    "detail": ""
+  },
+  {
+    "test": "Syllabus immutato syllabus-capitolo-3.js",
+    "status": "PASS",
+    "detail": ""
+  },
+  {
+    "test": "Syllabus immutato syllabus-capitolo-1.js",
+    "status": "PASS",
+    "detail": ""
+  },
+  {
+    "test": "Syllabus immutato syllabus-capitolo-6.js",
+    "status": "PASS",
+    "detail": ""
+  },
+  {
+    "test": "Syllabus immutato syllabus-capitolo-4.js",
+    "status": "PASS",
+    "detail": ""
+  },
+  {
+    "test": "Syllabus immutato syllabus-capitolo-2.js",
+    "status": "PASS",
+    "detail": ""
+  },
+  {
+    "test": "149 immagini immutate",
+    "status": "PASS",
+    "detail": "149"
+  },
+  {
+    "test": "Estratto ufficiale three-point Syllabus §5.1.4 · pagina 54",
+    "status": "PASS",
+    "detail": ""
+  },
+  {
+    "test": "Estratto ufficiale three-point Syllabus §5.1.4 · pagina 55",
+    "status": "PASS",
+    "detail": ""
+  },
+  {
+    "test": "Estratto ufficiale risk Syllabus §5.2.1 · pagina 57",
+    "status": "PASS",
+    "detail": ""
+  },
+  {
+    "test": "Estratto ufficiale risk Syllabus §5.2.3 · pagina 58",
+    "status": "PASS",
+    "detail": ""
+  },
+  {
+    "test": "Estratto ufficiale coverage Syllabus §4.3.1 · pagina 46",
+    "status": "PASS",
+    "detail": ""
+  },
+  {
+    "test": "Estratto ufficiale coverage Syllabus §4.3.2 · pagina 46",
+    "status": "PASS",
+    "detail": ""
+  },
+  {
+    "test": "Estratto ufficiale extrapolation Syllabus §5.1.4 · pagina 55",
+    "status": "PASS",
+    "detail": ""
+  },
+  {
+    "test": "Paragrafo link three-point 5.1.4",
+    "status": "PASS",
+    "detail": ""
+  },
+  {
+    "test": "Paragrafo link risk 5.2.1",
+    "status": "PASS",
+    "detail": ""
+  },
+  {
+    "test": "Paragrafo link risk 5.2.3",
+    "status": "PASS",
+    "detail": ""
+  },
+  {
+    "test": "Paragrafo link coverage 4.2.1",
+    "status": "PASS",
+    "detail": ""
+  },
+  {
+    "test": "Paragrafo link coverage 4.2.2",
+    "status": "PASS",
+    "detail": ""
+  },
+  {
+    "test": "Paragrafo link coverage 4.3.1",
+    "status": "PASS",
+    "detail": ""
+  },
+  {
+    "test": "Paragrafo link coverage 4.3.2",
+    "status": "PASS",
+    "detail": ""
+  },
+  {
+    "test": "Paragrafo link extrapolation 5.1.4",
+    "status": "PASS",
+    "detail": ""
+  }
+]
