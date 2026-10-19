@@ -1,7 +1,7 @@
 
 const DATA = [
 ...window.ISTQB_DATASETS["a"],...window.ISTQB_DATASETS["appendice-a"],...window.ISTQB_DATASETS["b"],...window.ISTQB_DATASETS["c"],...window.ISTQB_DATASETS["d"]
-];;const MIXED=["D-17", "A-19", "A-A3", "A-7", "A-2", "C-17", "D-2", "B-21", "A-A6", "A-A4", "C-7", "A-A22", "D-1", "A-9", "A-37", "C-10", "D-19", "B-18", "A-A15", "C-8", "D-14", "A-40", "A-A18", "D-4", "B-14", "B-25", "B-31", "A-33", "C-40", "B-26", "B-39", "C-31", "A-A1", "B-4", "D-28", "A-A26", "D-5", "A-39", "C-39", "C-19"];const lookup=Object.fromEntries(DATA.map(q=>[q.id,q]));const MODES=[['MIX','Mista (40)'],['A','Set A (40)'],['APP','Appendice A (26)'],['B','Set B (40)'],['C','Set C (40)'],['D','Set D (40)']];const $=id=>document.getElementById(id);let reviewing=false;let mode='MIX',state=null,formOpen=false;function list(mode){if(mode==='MIX')return MIXED.map(id=>lookup[id]).filter(Boolean);if(mode==='APP')return DATA.filter(q=>q.source==='A'&&q.number.startsWith('A'));return DATA.filter(q=>q.source===mode&&!q.number.startsWith('A'))}function duration(mode){return mode==='APP'?39*60:60*60}function key(mode){return 'istqb_official_v5_'+mode}function fresh(mode){return {answers:{},index:0,seconds:duration(mode),paused:false,submitted:false,started:false}}function save(){try{localStorage.setItem(key(mode),JSON.stringify(state))}catch(e){}}function load(mode){try{let v=JSON.parse(localStorage.getItem(key(mode))||'null');return v&&typeof v.answers==='object'&&typeof v.seconds==='number'?v:fresh(mode)}catch(e){return fresh(mode)}}function esc(s){return String(s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]))}function images(q){
+];;const MIXED=["D-17", "A-19", "A-A3", "A-7", "A-2", "C-17", "D-2", "B-21", "A-A6", "A-A4", "C-7", "A-A22", "D-1", "A-9", "A-37", "C-10", "D-19", "B-18", "A-A15", "C-8", "D-14", "A-40", "A-A18", "D-4", "B-14", "B-25", "B-31", "A-33", "C-40", "B-26", "B-39", "C-31", "A-A1", "B-4", "D-28", "A-A26", "D-5", "A-39", "C-39", "C-19"];const lookup=Object.fromEntries(DATA.map(q=>[q.id,q]));const MODES=[['MIX','Mista (40)'],['A','Set A (40)'],['APP','Appendice A (26)'],['B','Set B (40)'],['C','Set C (40)'],['D','Set D (40)']];const $=id=>document.getElementById(id);let reviewing=false;let mode='MIX',state=null,formOpen=false;function list(mode){if(mode==='MIX')return MIXED.map(id=>lookup[id]).filter(Boolean);if(mode==='APP')return DATA.filter(q=>q.source==='A'&&q.number.startsWith('A'));return DATA.filter(q=>q.source===mode&&!q.number.startsWith('A'))}function duration(mode){return mode==='APP'?39*60:60*60}function key(mode){return 'istqb_official_v5_'+mode}function fresh(mode){return {answers:{},index:0,seconds:duration(mode),paused:false,submitted:false,started:false}}function save(){try{localStorage.setItem(key(mode),JSON.stringify(state))}catch(e){}}function load(mode){try{let v=JSON.parse(localStorage.getItem(key(mode))||'null');return v&&typeof v.answers==='object'&&typeof v.seconds==='number'?v:fresh(mode)}catch(e){return fresh(mode)}}function esc(s){return String(s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]))}function images(q){
  const root=document.createElement('div');root.className='question-body';
  const lines=String(q.bodyText||'').split('\n');
  for(const line of lines){const p=document.createElement('div');p.className='body-line';p.textContent=line||'\u00a0';root.append(p)}
@@ -72,55 +72,82 @@ function openStudyPage(id){
  window.scrollTo({top:Math.max(0,anchor.getBoundingClientRect().top+window.scrollY-headerHeight-12),behavior:'instant'});
 }
 $('topicsBtn').onclick=openTopics;$('closeTopics').onclick=closeTopics;
-function reset(){if(!confirm('Vuoi ricominciare questa simulazione? Le risposte e il tempo salvati per questa modalità saranno azzerati.'))return;state=fresh(mode);save();render()}$('prev').onclick=()=>{state.index--;render();window.scrollTo(0,0)};$('next').onclick=()=>{state.index++;render();window.scrollTo(0,0)};$('finishBtn').onclick=()=>finish();$('resetBtn').onclick=reset;$('pauseBtn').onclick=()=>{if(state.submitted)return;state.paused=!state.paused;save();render()};$('resumeBtn').onclick=()=>{state.paused=false;save();render()};$('formulaBtn').onclick=()=>{$('formulaModal').classList.remove('hidden');formOpen=true};$('closeFormula').onclick=()=>{$('formulaModal').classList.add('hidden');formOpen=false};$('formulaModal').onclick=e=>{if(e.target===$('formulaModal')){$('formulaModal').classList.add('hidden');formOpen=false}};document.addEventListener('keydown',e=>{if(e.key==='Escape'&&formOpen){$('formulaModal').classList.add('hidden');formOpen=false}});setInterval(()=>{if(!state||!state.started||state.submitted||state.paused||reviewing||document.body.classList.contains("home-view")||topicsVisible)return;state.seconds=Math.max(0,state.seconds-1);if(state.seconds===0)finish(true);else{if(state.seconds%5===0)save();$('clock').textContent=String(Math.floor(state.seconds/60)).padStart(2,'0')+':'+String(state.seconds%60).padStart(2,'0');$('clock').classList.toggle('low',state.seconds<300)}},1000);
-const formulas=[
-['Stima a tre punti — stima attesa','E = (a + 4m + b) / 6','a = stima più ottimistica; m = stima più probabile; b = stima più pessimistica. La stima più probabile pesa quattro volte le altre.','Syllabus §5.1.4'],
-['Stima a tre punti — errore di misura','SD = (b − a) / 6','La deviazione standard stimata (SD) rappresenta l’incertezza della stima. Il syllabus illustra il risultato come E ± SD.','Syllabus §5.1.4'],
-['Stima a tre punti — formule inverse','a = 6E − 4m − b;  m = (6E − a − b) / 4;  b = 6E − a − 4m','Trasformazioni algebriche della formula precedente; non sono formule aggiuntive enunciate separatamente dal syllabus.','Derivate da §5.1.4'],
-['Errore di misura — formule inverse','b = a + 6SD;  a = b − 6SD','Per ricavare uno dei valori estremi conoscendo l’altro e SD.','Derivate da §5.1.4'],
-['Livello di rischio','R = P × I','R = livello di rischio; P = probabilità; I = impatto. È un modello quantitativo semplificato: il syllabus descrive il livello di rischio in funzione di probabilità e impatto, senza imporre questa scala numerica.','Syllabus §5.2'],
-['Rischio — formule inverse','P = R / I;  I = R / P','Valide solo se i denominatori sono diversi da zero e se si sta usando il modello quantitativo R = P × I. «Molto alto» non corrisponde automaticamente a un numero.','Trasformazioni del modello di rischio'],
-['Copertura','Copertura (%) = (elementi di copertura esercitati / elementi totali) × 100','Si applica al tipo di copertura richiesto: istruzioni, rami, partizioni di equivalenza, transizioni, ecc. Numeratore e denominatore devono essere della stessa categoria.','Syllabus §4.2–4.3'],
-['Copertura — formule inverse','Elementi esercitati = (copertura % × elementi totali) / 100;  elementi totali = (elementi esercitati × 100) / copertura %','Ricavi il numero di elementi esercitati oppure il totale, conoscendo la percentuale.','Derivate dalla definizione di copertura'],
-['Estrapolazione — esercizio Set C, domanda 31','E(n) = [3 × A(n−1) + A(n−2)] / 4','A(n−1) = lavoro effettivo dell’iterazione precedente; A(n−2) = lavoro effettivo di due iterazioni prima. Questa è la formula specifica della simulazione, non una formula generale prescritta dal syllabus.','Simulazione ufficiale Set C, domanda 31']
-];$('formulaContent').innerHTML=formulas.map(f=>`<div class="formula"><h3>${esc(f[0])}</h3><div class="eq">${esc(f[1])}</div><p>${esc(f[2])}</p><p class="sub">${esc(f[3])}</p></div>`).join('');showMode('MIX');
+function reset(){if(!confirm('Vuoi ricominciare questa simulazione? Le risposte e il tempo salvati per questa modalità saranno azzerati.'))return;state=fresh(mode);save();render()}$('prev').onclick=()=>{state.index--;render();window.scrollTo(0,0)};$('next').onclick=()=>{state.index++;render();window.scrollTo(0,0)};$('finishBtn').onclick=()=>finish();$('resetBtn').onclick=reset;$('pauseBtn').onclick=()=>{if(state.submitted)return;state.paused=!state.paused;save();render()};$('resumeBtn').onclick=()=>{state.paused=false;save();render()};setInterval(()=>{if(!state||!state.started||state.submitted||state.paused||reviewing||document.body.classList.contains("home-view")||topicsVisible||formulaVisible)return;state.seconds=Math.max(0,state.seconds-1);if(state.seconds===0)finish(true);else{if(state.seconds%5===0)save();$('clock').textContent=String(Math.floor(state.seconds/60)).padStart(2,'0')+':'+String(state.seconds%60).padStart(2,'0');$('clock').classList.toggle('low',state.seconds<300)}},1000);
 
-const REVIEW_IDS=new Set(["A-14", "A-20", "A-21", "A-22", "A-33", "A-A4", "A-A15", "A-A20", "B-22", "B-31", "B-32", "B-38", "C-22", "C-24", "C-31", "C-32", "D-20", "D-22", "D-23", "D-32"]);
-function renderReview(){
- const selected=DATA.filter(q=>REVIEW_IDS.has(q.id));
- $('reviewCount').textContent=selected.length+' domande';
- const root=$('reviewItems');root.innerHTML='';
- for(const q of selected){
-  const article=document.createElement('article');article.className='review-entry';article.id='review-'+q.id;
-  const h=document.createElement('h3');h.textContent=`${q.id} · Set ${q.source} · Domanda ${q.number}`;article.append(h);
-  const body=document.createElement('div');body.innerHTML=images(q);article.append(body);
-  const choices=document.createElement('div');choices.className='review-answers';
-  for(const letter of q.letters){const label=document.createElement('div');label.className='review-choice';const input=document.createElement('input');input.type='radio';input.disabled=true;const mark=document.createElement('span');mark.className='review-letter';mark.textContent=letter.toUpperCase()+')';const t=document.createElement('span');t.textContent=(q.choiceText||{})[letter]||'[Testo non disponibile]';label.append(input,mark,t);choices.append(label)}
-  article.append(choices);root.append(article);
- }
+// Formule già presenti nell'app originale. Le note non sostituiscono il syllabus.
+const FORMULA_PAGES = [
+ {id:'three-point',title:'Stima a tre punti',source:'Syllabus §5.1.4',entries:[
+  ['Stima attesa','E = (a + 4m + b) / 6','a = stima più ottimistica, m = stima più probabile, b = stima più pessimistica. La stima più probabile pesa quattro volte le altre.','Syllabus §5.1.4'],
+  ['Deviazione standard stimata','SD = (b − a) / 6','Il syllabus illustra l’incertezza come E ± SD.','Syllabus §5.1.4'],
+  ['Stima a tre punti — formule inverse','a = 6E − 4m − b; m = (6E − a − b) / 4; b = 6E − a − 4m','Trasformazioni algebriche, non enunciate separatamente dal syllabus.','Derivate dalla formula di stima'],
+  ['Errore di misura — formule inverse','b = a + 6SD; a = b − 6SD','Per ricavare un valore estremo conoscendo l’altro e SD.','Derivate dalla formula SD']
+ ],questions:['A-32']},
+ {id:'risk',title:'Livello di rischio',source:'Syllabus §5.2',entries:[
+  ['Livello di rischio','R = P × I','R = livello di rischio, P = probabilità, I = impatto. Modello quantitativo semplificato: il syllabus descrive il livello in funzione dei due fattori senza imporre una scala unica.','Modello esemplificativo — §5.2'],
+  ['Formule inverse','P = R / I; I = R / P','Valide solo se il denominatore è diverso da zero e si applica il modello quantitativo.','Derivate dal modello R = P × I']
+ ],questions:['D-34','A-35','A-A22']},
+ {id:'coverage',title:'Calcolo della copertura',source:'Syllabus §4.2–4.3',entries:[
+  ['Copertura','Copertura (%) = (elementi esercitati / elementi totali) × 100','Numeratore e denominatore devono riferirsi allo stesso tipo di elementi di copertura.','Syllabus §4.2–4.3'],
+  ['Formule inverse','Elementi esercitati = (copertura % × elementi totali) / 100; elementi totali = (elementi esercitati × 100) / copertura %','Nella seconda formula il valore della copertura percentuale deve essere diverso da zero.','Derivate dalla definizione di copertura']
+ ],questions:['B-25','B-24','A-24']},
+ {id:'extrapolation',title:'Estrapolazione',source:'Simulazione ufficiale C · domanda 31',entries:[
+  ['Media ponderata delle iterazioni','E(n) = [3 × A(n−1) + A(n−2)] / 4','Formula specifica della domanda C-31: A(n−1) e A(n−2) sono il lavoro effettivo delle due iterazioni precedenti. Non è una regola generale prescritta dal syllabus.','Set C, domanda 31']
+ ],questions:['C-31']}
+];
+let formulaVisible=false,currentFormulaId=FORMULA_PAGES[0].id;
+function renderFormulaIndex(){
+ const sidebar=$('formulaIndex');const scroll=sidebar.scrollTop;
+ sidebar.innerHTML=FORMULA_PAGES.map((f,i)=>`<button class="formula-index-btn ${f.id===currentFormulaId?'selected':''}" data-formula="${f.id}" type="button"><span class="formula-index-num">${String(i+1).padStart(2,'0')}</span><span>${esc(f.title)}</span></button>`).join('');
+ sidebar.querySelectorAll('button').forEach(b=>b.onclick=()=>openFormula(b.dataset.formula));sidebar.scrollTop=scroll;
 }
-$('reviewBtn').onclick=()=>{reviewing=true;$('exam').classList.add('hidden');$('results').classList.add('hidden');$('review').classList.remove('hidden');renderReview();window.scrollTo(0,0)};
-$('closeReview').onclick=()=>{reviewing=false;$('review').classList.add('hidden');render();window.scrollTo(0,0)};
-
+function renderFormulaQuestion(q){
+ const item=document.createElement('article');item.className='formula-question';item.dataset.question=q.id;
+ item.innerHTML=`<div class="formula-question-meta">DOMANDA UFFICIALE · ${esc(q.id)} · ${esc(q.lo||'Appendice A')}</div>${images(q)}<div class="formula-choices">${q.letters.map(l=>`<label class="topic-choice"><input type="${q.correct.length>1?'checkbox':'radio'}" name="formula-${esc(q.id)}" value="${l}"><strong>${l.toUpperCase()})</strong><span>${esc(q.choiceText[l]||'')}</span></label>`).join('')}</div><button class="outline formula-check" type="button">Verifica la risposta</button><div class="formula-answer hidden" aria-live="polite"></div>`;
+ item.querySelector('.formula-check').onclick=()=>{
+  const chosen=[...item.querySelectorAll('input:checked')].map(e=>e.value).sort().join(',');const expected=q.correct.slice().sort().join(',');
+  const result=item.querySelector('.formula-answer');result.classList.remove('hidden');result.innerHTML=`<div class="formula-answer-head">${chosen===expected?'Risposta corretta':'Risposta '+(chosen?'errata':'non selezionata')} · Soluzione: ${q.correct.join(', ').toUpperCase()}</div><h4>Spiegazione ufficiale</h4><div class="explain">${formattedExplanation(q.explanation)}</div>`;
+ };
+ return item;
+}
+function openFormula(id){
+ const idx=FORMULA_PAGES.findIndex(f=>f.id===id);if(idx<0)return;
+ currentFormulaId=id;renderFormulaIndex();const f=FORMULA_PAGES[idx],holder=$('formulaSections');holder.innerHTML='';
+ const page=document.createElement('article');page.className='formula-topic';
+ page.innerHTML=`<div class="formula-page-count">FORMULA ${idx+1} / ${FORMULA_PAGES.length}</div><h3>${esc(f.title)}</h3><p class="formula-source">${esc(f.source)}</p>${f.entries.map(e=>`<section class="formula-entry"><h4>${esc(e[0])}</h4><div class="eq">${esc(e[1])}</div><p>${esc(e[2])}</p><p class="formula-provenance">${esc(e[3])}</p></section>`).join('')}<div class="formula-exercises"><h3>Domande delle simulazioni ufficiali</h3><p class="sub">Rispondi, poi verifica: viene mostrata la spiegazione riportata nella soluzione ufficiale. Il formulario non altera le risposte delle simulazioni d’esame.</p></div>`;
+ const ex=page.querySelector('.formula-exercises');for(const qid of f.questions){const q=lookup[qid];if(q)ex.append(renderFormulaQuestion(q));}
+ const nav=document.createElement('div');nav.className='study-nav';nav.innerHTML=`<button id="formulaPrev" class="light" ${idx===0?'disabled':''}>← Precedente</button><button id="formulaNext" ${idx===FORMULA_PAGES.length-1?'disabled':''}>Successiva →</button><button id="formulaHome" class="outline">Homepage</button>`;
+ page.append(nav);holder.append(page);$('formulaPrev').onclick=()=>openFormula(FORMULA_PAGES[idx-1].id);$('formulaNext').onclick=()=>openFormula(FORMULA_PAGES[idx+1].id);$('formulaHome').onclick=showHome;
+ const top=page.getBoundingClientRect().top+window.scrollY-document.querySelector('header').offsetHeight-12;
+ window.scrollTo({top:Math.max(0,top),behavior:'instant'});
+}
+function showFormula(){
+ if(state){if(state.started&&!state.submitted)state.paused=true;save()}
+ topicsVisible=false;reviewing=false;formulaVisible=true;
+ document.body.classList.remove('home-view','study-view');document.body.classList.add('formula-view');
+ $('topics').classList.add('hidden');$('formulasPage').classList.remove('hidden');$('exam').classList.add('hidden');$('results').classList.add('hidden');$('paused').classList.add('hidden');
+ openFormula(currentFormulaId);
+}
+$('formulaBtn').onclick=showFormula;$('closeFormulas').onclick=showHome;
+showMode('MIX');
 
 function showHome(){
  if(state){if(state.started&&!state.submitted)state.paused=true;save()}
- topicsVisible=false;reviewing=false;
- $('topics').classList.add('hidden');$('review').classList.add('hidden');$('exam').classList.add('hidden');$('results').classList.add('hidden');$('paused').classList.add('hidden');
- document.body.classList.remove('study-view');document.body.classList.add('home-view');window.scrollTo(0,0)
+ topicsVisible=false;reviewing=false;formulaVisible=false;
+ $('topics').classList.add('hidden');$('formulasPage').classList.add('hidden');$('exam').classList.add('hidden');$('results').classList.add('hidden');$('paused').classList.add('hidden');
+ document.body.classList.remove('study-view','formula-view');document.body.classList.add('home-view');window.scrollTo(0,0)
 }
 function showStudy(){
  if(state){if(state.started&&!state.submitted)state.paused=true;save()}
- document.body.classList.remove('home-view');document.body.classList.add('study-view');
- topicsVisible=true;reviewing=false;$('topics').classList.remove('hidden');$('review').classList.add('hidden');$('paused').classList.add('hidden');
+ document.body.classList.remove('home-view','formula-view');document.body.classList.add('study-view');
+ topicsVisible=true;reviewing=false;formulaVisible=false;$('topics').classList.remove('hidden');$('formulasPage').classList.add('hidden');$('paused').classList.add('hidden');
  openStudyPage(currentStudyId||FULL_SYLLABUS[0].id)
 }
 function beginExam(m){
- document.body.classList.remove('home-view','study-view');topicsVisible=false;reviewing=false;
- $('topics').classList.add('hidden');$('review').classList.add('hidden');
+ document.body.classList.remove('home-view','study-view','formula-view');topicsVisible=false;reviewing=false;formulaVisible=false;
+ $('topics').classList.add('hidden');$('formulasPage').classList.add('hidden');
  showMode(m);if(state.submitted){state=fresh(m)}state.started=true;state.paused=false;save();render();window.scrollTo(0,0)
 }
-$('homeStudy').onclick=showStudy;$('homeExam').onclick=()=>beginExam($('homeMode').value);
+$('homeStudy').onclick=showStudy;$('homeFormula').onclick=showFormula;$('homeExam').onclick=()=>beginExam($('homeMode').value);
 $('topicsBtn').onclick=showStudy;$('closeTopics').onclick=showHome;
 const homeBtn=document.createElement('button');homeBtn.textContent='Homepage';homeBtn.className='light';homeBtn.onclick=showHome;document.querySelector('header .tools').prepend(homeBtn);
 $('modes').querySelectorAll('button').forEach(b=>b.onclick=()=>beginExam(b.dataset.mode));

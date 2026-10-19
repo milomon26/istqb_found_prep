@@ -1,39 +1,30 @@
-VERIFICHE SUL PACCHETTO ISTQB — 18/10/2026
+VERIFICHE ISTQB CTFL 4.0 – PACCHETTO CORRETTO – 19/10/2026
 
-Fonte: ISTQB_prep_cert(2).html fornito dall’utente.
+310/310 controlli dinamici superati (Chromium, viewport PC/mobile).
+  - Homepage, selezione modalità, distanza menu/pulsante.
+  - 79/79 pagine del syllabus su entrambi i viewport.
+  - Quattro pagine del formulario, otto domande con spiegazione ufficiale.
+  - Sei modalità esame, 186 domande, timer, pausa, consegna e risultati.
+  - Persistenza sessione testata con memoria simulata.
 
-1. Contenuti
-- 186 domande presenti: A 40, Appendice A 26, B 40, C 40, D 40.
-- 79 voci del syllabus presenti (6 capitoli).
-- Tutti i campi delle domande e le risposte, le risposte corrette e le spiegazioni
-  sono stati confrontati con l’originale: identici.
-- Tutti i campi del syllabus, compreso l’HTML delle pagine originali,
-  sono stati confrontati con l’originale: identici dopo la ricostruzione
-  degli indirizzi delle immagini.
-- 149 immagini estratte senza ricompressione: bytes identici alle URI
-  incorporate nell’HTML di partenza; SHA-256 verificati e file apribili.
+47/47 verifiche statiche superate.
+  - 186 domande: solo 3 cambi consentiti rispetto al precedente ZIP.
+  - Syllabus completamente invariato.
+  - 149/149 immagini verificate mediante SHA-256 e dimensione.
+  - Riferimenti ai file e sintassi dei 12 script JavaScript corretti.
 
-2. Struttura e codice
-- Tutti i percorsi CSS/JavaScript/immagini esistono e sono relativi,
-  compatibili con i percorsi dei repository GitHub Pages.
-- Verifica sintattica superata per tutti i 12 file JavaScript (node --check).
-- Nessuna dipendenza da librerie esterne o da fetch.
-- Corretto il layout dell’indice syllabus (contenitore a griglia e sidebar).
-- Corretto lo scorrimento durante il cambio argomento su PC e mobile.
+4/4 prove di valori limite superate.
+  - Set A: 25/40 non promosso, 26/40 promosso.
+  - Appendice A: 16/26 non promosso, 17/26 promosso.
 
-3. Prove funzionali browser
-- 58 test funzionali su Chromium desktop e viewport mobile: 58 superati.
-- Verificati: homepage, layout indice, navigazione, precedente/successivo,
-  scorrimento pagina, selezione risposte, tutti e 6 i tipi di simulazione,
-  conteggio domande, ritorno alla homepage e nessun errore JavaScript.
-- Limitazione di test: il browser dell’ambiente di esecuzione blocca
-  per policy l’accesso diretto a file:// e http://localhost.
-  La prova è stata eseguita caricando nel browser il medesimo HTML,
-  CSS, JS e dati, senza HTTP; l’integrità degli asset e dei riferimenti
-  è stata verificata separatamente. Un deployment live su GitHub Pages
-  non è stato effettuato e non viene dichiarato verificato.
+TOTALE: 361/361 verifiche PASS.
+BUG CORRETTI: BUG-01, BUG-02, BUG-03, BUG-04.
+NUOVI BUG APPLICATIVI CONFERMATI: 0.
 
-4. ZIP
-- Contenuto dell’archivio confrontato con tutti i 166 file prodotti
-  (incluso questo rapporto).
-- Integrità dei singoli file ZIP verificata con CRC.
+ATTENZIONE: non sono stati testati il deploy HTTPS effettivo di GitHub
+Pages e l'esecuzione su iPhone/Safari reale. Il browser di test impedisce
+per policy l'accesso diretto a localhost e file://: per la UI i contenuti
+HTML/CSS/JS sono stati caricati inline, e i file/asset verificati separatamente.
+
+Vedere RAPPORTO_QA_CORREZIONI.md per il dettaglio e per la contraddizione
+nella fonte ufficiale A-SOL per la domanda A21.

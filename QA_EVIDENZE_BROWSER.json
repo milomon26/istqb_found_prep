@@ -1,0 +1,1862 @@
+[
+  {
+    "group": "desktop",
+    "test": "home initial",
+    "status": "PASS",
+    "detail": ""
+  },
+  {
+    "group": "desktop",
+    "test": "review button removed",
+    "status": "PASS",
+    "detail": ""
+  },
+  {
+    "group": "desktop",
+    "test": "selection/button spacing",
+    "status": "PASS",
+    "detail": "{'gap': 22, 'visible': True}"
+  },
+  {
+    "group": "desktop",
+    "test": "formula page opens",
+    "status": "PASS",
+    "detail": ""
+  },
+  {
+    "group": "desktop",
+    "test": "formula sidebar four chapters",
+    "status": "PASS",
+    "detail": ""
+  },
+  {
+    "group": "desktop",
+    "test": "formula three-point loaded",
+    "status": "PASS",
+    "detail": ""
+  },
+  {
+    "group": "desktop",
+    "test": "formula question A-32",
+    "status": "PASS",
+    "detail": ""
+  },
+  {
+    "group": "desktop",
+    "test": "formula official explanation A-32",
+    "status": "PASS",
+    "detail": ""
+  },
+  {
+    "group": "desktop",
+    "test": "formula risk loaded",
+    "status": "PASS",
+    "detail": ""
+  },
+  {
+    "group": "desktop",
+    "test": "formula question D-34",
+    "status": "PASS",
+    "detail": ""
+  },
+  {
+    "group": "desktop",
+    "test": "formula official explanation D-34",
+    "status": "PASS",
+    "detail": ""
+  },
+  {
+    "group": "desktop",
+    "test": "formula question A-35",
+    "status": "PASS",
+    "detail": ""
+  },
+  {
+    "group": "desktop",
+    "test": "formula official explanation A-35",
+    "status": "PASS",
+    "detail": ""
+  },
+  {
+    "group": "desktop",
+    "test": "formula question A-A22",
+    "status": "PASS",
+    "detail": ""
+  },
+  {
+    "group": "desktop",
+    "test": "formula official explanation A-A22",
+    "status": "PASS",
+    "detail": ""
+  },
+  {
+    "group": "desktop",
+    "test": "formula coverage loaded",
+    "status": "PASS",
+    "detail": ""
+  },
+  {
+    "group": "desktop",
+    "test": "formula question B-25",
+    "status": "PASS",
+    "detail": ""
+  },
+  {
+    "group": "desktop",
+    "test": "formula official explanation B-25",
+    "status": "PASS",
+    "detail": ""
+  },
+  {
+    "group": "desktop",
+    "test": "formula question B-24",
+    "status": "PASS",
+    "detail": ""
+  },
+  {
+    "group": "desktop",
+    "test": "formula official explanation B-24",
+    "status": "PASS",
+    "detail": ""
+  },
+  {
+    "group": "desktop",
+    "test": "formula question A-24",
+    "status": "PASS",
+    "detail": ""
+  },
+  {
+    "group": "desktop",
+    "test": "formula official explanation A-24",
+    "status": "PASS",
+    "detail": ""
+  },
+  {
+    "group": "desktop",
+    "test": "formula extrapolation loaded",
+    "status": "PASS",
+    "detail": ""
+  },
+  {
+    "group": "desktop",
+    "test": "formula question C-31",
+    "status": "PASS",
+    "detail": ""
+  },
+  {
+    "group": "desktop",
+    "test": "formula official explanation C-31",
+    "status": "PASS",
+    "detail": ""
+  },
+  {
+    "group": "desktop",
+    "test": "formula nav next/prev",
+    "status": "PASS",
+    "detail": ""
+  },
+  {
+    "group": "desktop",
+    "test": "syllabus opens",
+    "status": "PASS",
+    "detail": ""
+  },
+  {
+    "group": "desktop",
+    "test": "syllabus index",
+    "status": "PASS",
+    "detail": ""
+  },
+  {
+    "group": "desktop",
+    "test": "syllabus page 01",
+    "status": "PASS",
+    "detail": ""
+  },
+  {
+    "group": "desktop",
+    "test": "syllabus page 02",
+    "status": "PASS",
+    "detail": ""
+  },
+  {
+    "group": "desktop",
+    "test": "syllabus page 03",
+    "status": "PASS",
+    "detail": ""
+  },
+  {
+    "group": "desktop",
+    "test": "syllabus page 04",
+    "status": "PASS",
+    "detail": ""
+  },
+  {
+    "group": "desktop",
+    "test": "syllabus page 05",
+    "status": "PASS",
+    "detail": ""
+  },
+  {
+    "group": "desktop",
+    "test": "syllabus page 06",
+    "status": "PASS",
+    "detail": ""
+  },
+  {
+    "group": "desktop",
+    "test": "syllabus page 07",
+    "status": "PASS",
+    "detail": ""
+  },
+  {
+    "group": "desktop",
+    "test": "syllabus page 08",
+    "status": "PASS",
+    "detail": ""
+  },
+  {
+    "group": "desktop",
+    "test": "syllabus page 09",
+    "status": "PASS",
+    "detail": ""
+  },
+  {
+    "group": "desktop",
+    "test": "syllabus page 10",
+    "status": "PASS",
+    "detail": ""
+  },
+  {
+    "group": "desktop",
+    "test": "syllabus page 11",
+    "status": "PASS",
+    "detail": ""
+  },
+  {
+    "group": "desktop",
+    "test": "syllabus page 12",
+    "status": "PASS",
+    "detail": ""
+  },
+  {
+    "group": "desktop",
+    "test": "syllabus page 13",
+    "status": "PASS",
+    "detail": ""
+  },
+  {
+    "group": "desktop",
+    "test": "syllabus page 14",
+    "status": "PASS",
+    "detail": ""
+  },
+  {
+    "group": "desktop",
+    "test": "syllabus page 15",
+    "status": "PASS",
+    "detail": ""
+  },
+  {
+    "group": "desktop",
+    "test": "syllabus page 16",
+    "status": "PASS",
+    "detail": ""
+  },
+  {
+    "group": "desktop",
+    "test": "syllabus page 17",
+    "status": "PASS",
+    "detail": ""
+  },
+  {
+    "group": "desktop",
+    "test": "syllabus page 18",
+    "status": "PASS",
+    "detail": ""
+  },
+  {
+    "group": "desktop",
+    "test": "syllabus page 19",
+    "status": "PASS",
+    "detail": ""
+  },
+  {
+    "group": "desktop",
+    "test": "syllabus page 20",
+    "status": "PASS",
+    "detail": ""
+  },
+  {
+    "group": "desktop",
+    "test": "syllabus page 21",
+    "status": "PASS",
+    "detail": ""
+  },
+  {
+    "group": "desktop",
+    "test": "syllabus page 22",
+    "status": "PASS",
+    "detail": ""
+  },
+  {
+    "group": "desktop",
+    "test": "syllabus page 23",
+    "status": "PASS",
+    "detail": ""
+  },
+  {
+    "group": "desktop",
+    "test": "syllabus page 24",
+    "status": "PASS",
+    "detail": ""
+  },
+  {
+    "group": "desktop",
+    "test": "syllabus page 25",
+    "status": "PASS",
+    "detail": ""
+  },
+  {
+    "group": "desktop",
+    "test": "syllabus page 26",
+    "status": "PASS",
+    "detail": ""
+  },
+  {
+    "group": "desktop",
+    "test": "syllabus page 27",
+    "status": "PASS",
+    "detail": ""
+  },
+  {
+    "group": "desktop",
+    "test": "syllabus page 28",
+    "status": "PASS",
+    "detail": ""
+  },
+  {
+    "group": "desktop",
+    "test": "syllabus page 29",
+    "status": "PASS",
+    "detail": ""
+  },
+  {
+    "group": "desktop",
+    "test": "syllabus page 30",
+    "status": "PASS",
+    "detail": ""
+  },
+  {
+    "group": "desktop",
+    "test": "syllabus page 31",
+    "status": "PASS",
+    "detail": ""
+  },
+  {
+    "group": "desktop",
+    "test": "syllabus page 32",
+    "status": "PASS",
+    "detail": ""
+  },
+  {
+    "group": "desktop",
+    "test": "syllabus page 33",
+    "status": "PASS",
+    "detail": ""
+  },
+  {
+    "group": "desktop",
+    "test": "syllabus page 34",
+    "status": "PASS",
+    "detail": ""
+  },
+  {
+    "group": "desktop",
+    "test": "syllabus page 35",
+    "status": "PASS",
+    "detail": ""
+  },
+  {
+    "group": "desktop",
+    "test": "syllabus page 36",
+    "status": "PASS",
+    "detail": ""
+  },
+  {
+    "group": "desktop",
+    "test": "syllabus page 37",
+    "status": "PASS",
+    "detail": ""
+  },
+  {
+    "group": "desktop",
+    "test": "syllabus page 38",
+    "status": "PASS",
+    "detail": ""
+  },
+  {
+    "group": "desktop",
+    "test": "syllabus page 39",
+    "status": "PASS",
+    "detail": ""
+  },
+  {
+    "group": "desktop",
+    "test": "syllabus page 40",
+    "status": "PASS",
+    "detail": ""
+  },
+  {
+    "group": "desktop",
+    "test": "syllabus page 41",
+    "status": "PASS",
+    "detail": ""
+  },
+  {
+    "group": "desktop",
+    "test": "syllabus page 42",
+    "status": "PASS",
+    "detail": ""
+  },
+  {
+    "group": "desktop",
+    "test": "syllabus page 43",
+    "status": "PASS",
+    "detail": ""
+  },
+  {
+    "group": "desktop",
+    "test": "syllabus page 44",
+    "status": "PASS",
+    "detail": ""
+  },
+  {
+    "group": "desktop",
+    "test": "syllabus page 45",
+    "status": "PASS",
+    "detail": ""
+  },
+  {
+    "group": "desktop",
+    "test": "syllabus page 46",
+    "status": "PASS",
+    "detail": ""
+  },
+  {
+    "group": "desktop",
+    "test": "syllabus page 47",
+    "status": "PASS",
+    "detail": ""
+  },
+  {
+    "group": "desktop",
+    "test": "syllabus page 48",
+    "status": "PASS",
+    "detail": ""
+  },
+  {
+    "group": "desktop",
+    "test": "syllabus page 49",
+    "status": "PASS",
+    "detail": ""
+  },
+  {
+    "group": "desktop",
+    "test": "syllabus page 50",
+    "status": "PASS",
+    "detail": ""
+  },
+  {
+    "group": "desktop",
+    "test": "syllabus page 51",
+    "status": "PASS",
+    "detail": ""
+  },
+  {
+    "group": "desktop",
+    "test": "syllabus page 52",
+    "status": "PASS",
+    "detail": ""
+  },
+  {
+    "group": "desktop",
+    "test": "syllabus page 53",
+    "status": "PASS",
+    "detail": ""
+  },
+  {
+    "group": "desktop",
+    "test": "syllabus page 54",
+    "status": "PASS",
+    "detail": ""
+  },
+  {
+    "group": "desktop",
+    "test": "syllabus page 55",
+    "status": "PASS",
+    "detail": ""
+  },
+  {
+    "group": "desktop",
+    "test": "syllabus page 56",
+    "status": "PASS",
+    "detail": ""
+  },
+  {
+    "group": "desktop",
+    "test": "syllabus page 57",
+    "status": "PASS",
+    "detail": ""
+  },
+  {
+    "group": "desktop",
+    "test": "syllabus page 58",
+    "status": "PASS",
+    "detail": ""
+  },
+  {
+    "group": "desktop",
+    "test": "syllabus page 59",
+    "status": "PASS",
+    "detail": ""
+  },
+  {
+    "group": "desktop",
+    "test": "syllabus page 60",
+    "status": "PASS",
+    "detail": ""
+  },
+  {
+    "group": "desktop",
+    "test": "syllabus page 61",
+    "status": "PASS",
+    "detail": ""
+  },
+  {
+    "group": "desktop",
+    "test": "syllabus page 62",
+    "status": "PASS",
+    "detail": ""
+  },
+  {
+    "group": "desktop",
+    "test": "syllabus page 63",
+    "status": "PASS",
+    "detail": ""
+  },
+  {
+    "group": "desktop",
+    "test": "syllabus page 64",
+    "status": "PASS",
+    "detail": ""
+  },
+  {
+    "group": "desktop",
+    "test": "syllabus page 65",
+    "status": "PASS",
+    "detail": ""
+  },
+  {
+    "group": "desktop",
+    "test": "syllabus page 66",
+    "status": "PASS",
+    "detail": ""
+  },
+  {
+    "group": "desktop",
+    "test": "syllabus page 67",
+    "status": "PASS",
+    "detail": ""
+  },
+  {
+    "group": "desktop",
+    "test": "syllabus page 68",
+    "status": "PASS",
+    "detail": ""
+  },
+  {
+    "group": "desktop",
+    "test": "syllabus page 69",
+    "status": "PASS",
+    "detail": ""
+  },
+  {
+    "group": "desktop",
+    "test": "syllabus page 70",
+    "status": "PASS",
+    "detail": ""
+  },
+  {
+    "group": "desktop",
+    "test": "syllabus page 71",
+    "status": "PASS",
+    "detail": ""
+  },
+  {
+    "group": "desktop",
+    "test": "syllabus page 72",
+    "status": "PASS",
+    "detail": ""
+  },
+  {
+    "group": "desktop",
+    "test": "syllabus page 73",
+    "status": "PASS",
+    "detail": ""
+  },
+  {
+    "group": "desktop",
+    "test": "syllabus page 74",
+    "status": "PASS",
+    "detail": ""
+  },
+  {
+    "group": "desktop",
+    "test": "syllabus page 75",
+    "status": "PASS",
+    "detail": ""
+  },
+  {
+    "group": "desktop",
+    "test": "syllabus page 76",
+    "status": "PASS",
+    "detail": ""
+  },
+  {
+    "group": "desktop",
+    "test": "syllabus page 77",
+    "status": "PASS",
+    "detail": ""
+  },
+  {
+    "group": "desktop",
+    "test": "syllabus page 78",
+    "status": "PASS",
+    "detail": ""
+  },
+  {
+    "group": "desktop",
+    "test": "syllabus page 79",
+    "status": "PASS",
+    "detail": ""
+  },
+  {
+    "group": "desktop",
+    "test": "return to home",
+    "status": "PASS",
+    "detail": ""
+  },
+  {
+    "group": "desktop",
+    "test": "exam A question list",
+    "status": "PASS",
+    "detail": ""
+  },
+  {
+    "group": "desktop",
+    "test": "exam A timer starts",
+    "status": "PASS",
+    "detail": ""
+  },
+  {
+    "group": "desktop",
+    "test": "exam A all questions display",
+    "status": "PASS",
+    "detail": "[]"
+  },
+  {
+    "group": "desktop",
+    "test": "exam A pause",
+    "status": "PASS",
+    "detail": ""
+  },
+  {
+    "group": "desktop",
+    "test": "exam A resume",
+    "status": "PASS",
+    "detail": ""
+  },
+  {
+    "group": "desktop",
+    "test": "exam A to home",
+    "status": "PASS",
+    "detail": ""
+  },
+  {
+    "group": "desktop",
+    "test": "exam APP question list",
+    "status": "PASS",
+    "detail": ""
+  },
+  {
+    "group": "desktop",
+    "test": "exam APP timer starts",
+    "status": "PASS",
+    "detail": ""
+  },
+  {
+    "group": "desktop",
+    "test": "exam APP all questions display",
+    "status": "PASS",
+    "detail": "[]"
+  },
+  {
+    "group": "desktop",
+    "test": "exam APP pause",
+    "status": "PASS",
+    "detail": ""
+  },
+  {
+    "group": "desktop",
+    "test": "exam APP resume",
+    "status": "PASS",
+    "detail": ""
+  },
+  {
+    "group": "desktop",
+    "test": "exam APP to home",
+    "status": "PASS",
+    "detail": ""
+  },
+  {
+    "group": "desktop",
+    "test": "exam B question list",
+    "status": "PASS",
+    "detail": ""
+  },
+  {
+    "group": "desktop",
+    "test": "exam B timer starts",
+    "status": "PASS",
+    "detail": ""
+  },
+  {
+    "group": "desktop",
+    "test": "exam B all questions display",
+    "status": "PASS",
+    "detail": "[]"
+  },
+  {
+    "group": "desktop",
+    "test": "exam B pause",
+    "status": "PASS",
+    "detail": ""
+  },
+  {
+    "group": "desktop",
+    "test": "exam B resume",
+    "status": "PASS",
+    "detail": ""
+  },
+  {
+    "group": "desktop",
+    "test": "exam B to home",
+    "status": "PASS",
+    "detail": ""
+  },
+  {
+    "group": "desktop",
+    "test": "exam C question list",
+    "status": "PASS",
+    "detail": ""
+  },
+  {
+    "group": "desktop",
+    "test": "exam C timer starts",
+    "status": "PASS",
+    "detail": ""
+  },
+  {
+    "group": "desktop",
+    "test": "exam C all questions display",
+    "status": "PASS",
+    "detail": "[]"
+  },
+  {
+    "group": "desktop",
+    "test": "exam C pause",
+    "status": "PASS",
+    "detail": ""
+  },
+  {
+    "group": "desktop",
+    "test": "exam C resume",
+    "status": "PASS",
+    "detail": ""
+  },
+  {
+    "group": "desktop",
+    "test": "exam C to home",
+    "status": "PASS",
+    "detail": ""
+  },
+  {
+    "group": "desktop",
+    "test": "exam D question list",
+    "status": "PASS",
+    "detail": ""
+  },
+  {
+    "group": "desktop",
+    "test": "exam D timer starts",
+    "status": "PASS",
+    "detail": ""
+  },
+  {
+    "group": "desktop",
+    "test": "exam D all questions display",
+    "status": "PASS",
+    "detail": "[]"
+  },
+  {
+    "group": "desktop",
+    "test": "exam D pause",
+    "status": "PASS",
+    "detail": ""
+  },
+  {
+    "group": "desktop",
+    "test": "exam D resume",
+    "status": "PASS",
+    "detail": ""
+  },
+  {
+    "group": "desktop",
+    "test": "exam D to home",
+    "status": "PASS",
+    "detail": ""
+  },
+  {
+    "group": "desktop",
+    "test": "exam MIX question list",
+    "status": "PASS",
+    "detail": ""
+  },
+  {
+    "group": "desktop",
+    "test": "exam MIX timer starts",
+    "status": "PASS",
+    "detail": ""
+  },
+  {
+    "group": "desktop",
+    "test": "exam MIX all questions display",
+    "status": "PASS",
+    "detail": "[]"
+  },
+  {
+    "group": "desktop",
+    "test": "exam MIX pause",
+    "status": "PASS",
+    "detail": ""
+  },
+  {
+    "group": "desktop",
+    "test": "exam MIX resume",
+    "status": "PASS",
+    "detail": ""
+  },
+  {
+    "group": "desktop",
+    "test": "exam MIX to home",
+    "status": "PASS",
+    "detail": ""
+  },
+  {
+    "group": "desktop",
+    "test": "scoring 100% A",
+    "status": "PASS",
+    "detail": ""
+  },
+  {
+    "group": "desktop",
+    "test": "scoring 100% APP",
+    "status": "PASS",
+    "detail": ""
+  },
+  {
+    "group": "desktop",
+    "test": "scoring 100% B",
+    "status": "PASS",
+    "detail": ""
+  },
+  {
+    "group": "desktop",
+    "test": "scoring 100% C",
+    "status": "PASS",
+    "detail": ""
+  },
+  {
+    "group": "desktop",
+    "test": "scoring 100% D",
+    "status": "PASS",
+    "detail": ""
+  },
+  {
+    "group": "desktop",
+    "test": "scoring 100% MIX",
+    "status": "PASS",
+    "detail": ""
+  },
+  {
+    "group": "desktop",
+    "test": "A-A21 scoring A correct",
+    "status": "PASS",
+    "detail": ""
+  },
+  {
+    "group": "desktop",
+    "test": "no undefined in results",
+    "status": "PASS",
+    "detail": ""
+  },
+  {
+    "group": "desktop",
+    "test": "reload saves selected answers and position",
+    "status": "PASS",
+    "detail": ""
+  },
+  {
+    "group": "desktop",
+    "test": "automatic submission on zero seconds",
+    "status": "PASS",
+    "detail": ""
+  },
+  {
+    "group": "desktop",
+    "test": "no JavaScript runtime exceptions",
+    "status": "PASS",
+    "detail": "[]"
+  },
+  {
+    "group": "mobile",
+    "test": "home initial",
+    "status": "PASS",
+    "detail": ""
+  },
+  {
+    "group": "mobile",
+    "test": "review button removed",
+    "status": "PASS",
+    "detail": ""
+  },
+  {
+    "group": "mobile",
+    "test": "selection/button spacing",
+    "status": "PASS",
+    "detail": "{'gap': 22, 'visible': True}"
+  },
+  {
+    "group": "mobile",
+    "test": "formula page opens",
+    "status": "PASS",
+    "detail": ""
+  },
+  {
+    "group": "mobile",
+    "test": "formula sidebar four chapters",
+    "status": "PASS",
+    "detail": ""
+  },
+  {
+    "group": "mobile",
+    "test": "formula three-point loaded",
+    "status": "PASS",
+    "detail": ""
+  },
+  {
+    "group": "mobile",
+    "test": "formula question A-32",
+    "status": "PASS",
+    "detail": ""
+  },
+  {
+    "group": "mobile",
+    "test": "formula official explanation A-32",
+    "status": "PASS",
+    "detail": ""
+  },
+  {
+    "group": "mobile",
+    "test": "formula risk loaded",
+    "status": "PASS",
+    "detail": ""
+  },
+  {
+    "group": "mobile",
+    "test": "formula question D-34",
+    "status": "PASS",
+    "detail": ""
+  },
+  {
+    "group": "mobile",
+    "test": "formula official explanation D-34",
+    "status": "PASS",
+    "detail": ""
+  },
+  {
+    "group": "mobile",
+    "test": "formula question A-35",
+    "status": "PASS",
+    "detail": ""
+  },
+  {
+    "group": "mobile",
+    "test": "formula official explanation A-35",
+    "status": "PASS",
+    "detail": ""
+  },
+  {
+    "group": "mobile",
+    "test": "formula question A-A22",
+    "status": "PASS",
+    "detail": ""
+  },
+  {
+    "group": "mobile",
+    "test": "formula official explanation A-A22",
+    "status": "PASS",
+    "detail": ""
+  },
+  {
+    "group": "mobile",
+    "test": "formula coverage loaded",
+    "status": "PASS",
+    "detail": ""
+  },
+  {
+    "group": "mobile",
+    "test": "formula question B-25",
+    "status": "PASS",
+    "detail": ""
+  },
+  {
+    "group": "mobile",
+    "test": "formula official explanation B-25",
+    "status": "PASS",
+    "detail": ""
+  },
+  {
+    "group": "mobile",
+    "test": "formula question B-24",
+    "status": "PASS",
+    "detail": ""
+  },
+  {
+    "group": "mobile",
+    "test": "formula official explanation B-24",
+    "status": "PASS",
+    "detail": ""
+  },
+  {
+    "group": "mobile",
+    "test": "formula question A-24",
+    "status": "PASS",
+    "detail": ""
+  },
+  {
+    "group": "mobile",
+    "test": "formula official explanation A-24",
+    "status": "PASS",
+    "detail": ""
+  },
+  {
+    "group": "mobile",
+    "test": "formula extrapolation loaded",
+    "status": "PASS",
+    "detail": ""
+  },
+  {
+    "group": "mobile",
+    "test": "formula question C-31",
+    "status": "PASS",
+    "detail": ""
+  },
+  {
+    "group": "mobile",
+    "test": "formula official explanation C-31",
+    "status": "PASS",
+    "detail": ""
+  },
+  {
+    "group": "mobile",
+    "test": "formula nav next/prev",
+    "status": "PASS",
+    "detail": ""
+  },
+  {
+    "group": "mobile",
+    "test": "syllabus opens",
+    "status": "PASS",
+    "detail": ""
+  },
+  {
+    "group": "mobile",
+    "test": "syllabus index",
+    "status": "PASS",
+    "detail": ""
+  },
+  {
+    "group": "mobile",
+    "test": "syllabus page 01",
+    "status": "PASS",
+    "detail": ""
+  },
+  {
+    "group": "mobile",
+    "test": "syllabus page 02",
+    "status": "PASS",
+    "detail": ""
+  },
+  {
+    "group": "mobile",
+    "test": "syllabus page 03",
+    "status": "PASS",
+    "detail": ""
+  },
+  {
+    "group": "mobile",
+    "test": "syllabus page 04",
+    "status": "PASS",
+    "detail": ""
+  },
+  {
+    "group": "mobile",
+    "test": "syllabus page 05",
+    "status": "PASS",
+    "detail": ""
+  },
+  {
+    "group": "mobile",
+    "test": "syllabus page 06",
+    "status": "PASS",
+    "detail": ""
+  },
+  {
+    "group": "mobile",
+    "test": "syllabus page 07",
+    "status": "PASS",
+    "detail": ""
+  },
+  {
+    "group": "mobile",
+    "test": "syllabus page 08",
+    "status": "PASS",
+    "detail": ""
+  },
+  {
+    "group": "mobile",
+    "test": "syllabus page 09",
+    "status": "PASS",
+    "detail": ""
+  },
+  {
+    "group": "mobile",
+    "test": "syllabus page 10",
+    "status": "PASS",
+    "detail": ""
+  },
+  {
+    "group": "mobile",
+    "test": "syllabus page 11",
+    "status": "PASS",
+    "detail": ""
+  },
+  {
+    "group": "mobile",
+    "test": "syllabus page 12",
+    "status": "PASS",
+    "detail": ""
+  },
+  {
+    "group": "mobile",
+    "test": "syllabus page 13",
+    "status": "PASS",
+    "detail": ""
+  },
+  {
+    "group": "mobile",
+    "test": "syllabus page 14",
+    "status": "PASS",
+    "detail": ""
+  },
+  {
+    "group": "mobile",
+    "test": "syllabus page 15",
+    "status": "PASS",
+    "detail": ""
+  },
+  {
+    "group": "mobile",
+    "test": "syllabus page 16",
+    "status": "PASS",
+    "detail": ""
+  },
+  {
+    "group": "mobile",
+    "test": "syllabus page 17",
+    "status": "PASS",
+    "detail": ""
+  },
+  {
+    "group": "mobile",
+    "test": "syllabus page 18",
+    "status": "PASS",
+    "detail": ""
+  },
+  {
+    "group": "mobile",
+    "test": "syllabus page 19",
+    "status": "PASS",
+    "detail": ""
+  },
+  {
+    "group": "mobile",
+    "test": "syllabus page 20",
+    "status": "PASS",
+    "detail": ""
+  },
+  {
+    "group": "mobile",
+    "test": "syllabus page 21",
+    "status": "PASS",
+    "detail": ""
+  },
+  {
+    "group": "mobile",
+    "test": "syllabus page 22",
+    "status": "PASS",
+    "detail": ""
+  },
+  {
+    "group": "mobile",
+    "test": "syllabus page 23",
+    "status": "PASS",
+    "detail": ""
+  },
+  {
+    "group": "mobile",
+    "test": "syllabus page 24",
+    "status": "PASS",
+    "detail": ""
+  },
+  {
+    "group": "mobile",
+    "test": "syllabus page 25",
+    "status": "PASS",
+    "detail": ""
+  },
+  {
+    "group": "mobile",
+    "test": "syllabus page 26",
+    "status": "PASS",
+    "detail": ""
+  },
+  {
+    "group": "mobile",
+    "test": "syllabus page 27",
+    "status": "PASS",
+    "detail": ""
+  },
+  {
+    "group": "mobile",
+    "test": "syllabus page 28",
+    "status": "PASS",
+    "detail": ""
+  },
+  {
+    "group": "mobile",
+    "test": "syllabus page 29",
+    "status": "PASS",
+    "detail": ""
+  },
+  {
+    "group": "mobile",
+    "test": "syllabus page 30",
+    "status": "PASS",
+    "detail": ""
+  },
+  {
+    "group": "mobile",
+    "test": "syllabus page 31",
+    "status": "PASS",
+    "detail": ""
+  },
+  {
+    "group": "mobile",
+    "test": "syllabus page 32",
+    "status": "PASS",
+    "detail": ""
+  },
+  {
+    "group": "mobile",
+    "test": "syllabus page 33",
+    "status": "PASS",
+    "detail": ""
+  },
+  {
+    "group": "mobile",
+    "test": "syllabus page 34",
+    "status": "PASS",
+    "detail": ""
+  },
+  {
+    "group": "mobile",
+    "test": "syllabus page 35",
+    "status": "PASS",
+    "detail": ""
+  },
+  {
+    "group": "mobile",
+    "test": "syllabus page 36",
+    "status": "PASS",
+    "detail": ""
+  },
+  {
+    "group": "mobile",
+    "test": "syllabus page 37",
+    "status": "PASS",
+    "detail": ""
+  },
+  {
+    "group": "mobile",
+    "test": "syllabus page 38",
+    "status": "PASS",
+    "detail": ""
+  },
+  {
+    "group": "mobile",
+    "test": "syllabus page 39",
+    "status": "PASS",
+    "detail": ""
+  },
+  {
+    "group": "mobile",
+    "test": "syllabus page 40",
+    "status": "PASS",
+    "detail": ""
+  },
+  {
+    "group": "mobile",
+    "test": "syllabus page 41",
+    "status": "PASS",
+    "detail": ""
+  },
+  {
+    "group": "mobile",
+    "test": "syllabus page 42",
+    "status": "PASS",
+    "detail": ""
+  },
+  {
+    "group": "mobile",
+    "test": "syllabus page 43",
+    "status": "PASS",
+    "detail": ""
+  },
+  {
+    "group": "mobile",
+    "test": "syllabus page 44",
+    "status": "PASS",
+    "detail": ""
+  },
+  {
+    "group": "mobile",
+    "test": "syllabus page 45",
+    "status": "PASS",
+    "detail": ""
+  },
+  {
+    "group": "mobile",
+    "test": "syllabus page 46",
+    "status": "PASS",
+    "detail": ""
+  },
+  {
+    "group": "mobile",
+    "test": "syllabus page 47",
+    "status": "PASS",
+    "detail": ""
+  },
+  {
+    "group": "mobile",
+    "test": "syllabus page 48",
+    "status": "PASS",
+    "detail": ""
+  },
+  {
+    "group": "mobile",
+    "test": "syllabus page 49",
+    "status": "PASS",
+    "detail": ""
+  },
+  {
+    "group": "mobile",
+    "test": "syllabus page 50",
+    "status": "PASS",
+    "detail": ""
+  },
+  {
+    "group": "mobile",
+    "test": "syllabus page 51",
+    "status": "PASS",
+    "detail": ""
+  },
+  {
+    "group": "mobile",
+    "test": "syllabus page 52",
+    "status": "PASS",
+    "detail": ""
+  },
+  {
+    "group": "mobile",
+    "test": "syllabus page 53",
+    "status": "PASS",
+    "detail": ""
+  },
+  {
+    "group": "mobile",
+    "test": "syllabus page 54",
+    "status": "PASS",
+    "detail": ""
+  },
+  {
+    "group": "mobile",
+    "test": "syllabus page 55",
+    "status": "PASS",
+    "detail": ""
+  },
+  {
+    "group": "mobile",
+    "test": "syllabus page 56",
+    "status": "PASS",
+    "detail": ""
+  },
+  {
+    "group": "mobile",
+    "test": "syllabus page 57",
+    "status": "PASS",
+    "detail": ""
+  },
+  {
+    "group": "mobile",
+    "test": "syllabus page 58",
+    "status": "PASS",
+    "detail": ""
+  },
+  {
+    "group": "mobile",
+    "test": "syllabus page 59",
+    "status": "PASS",
+    "detail": ""
+  },
+  {
+    "group": "mobile",
+    "test": "syllabus page 60",
+    "status": "PASS",
+    "detail": ""
+  },
+  {
+    "group": "mobile",
+    "test": "syllabus page 61",
+    "status": "PASS",
+    "detail": ""
+  },
+  {
+    "group": "mobile",
+    "test": "syllabus page 62",
+    "status": "PASS",
+    "detail": ""
+  },
+  {
+    "group": "mobile",
+    "test": "syllabus page 63",
+    "status": "PASS",
+    "detail": ""
+  },
+  {
+    "group": "mobile",
+    "test": "syllabus page 64",
+    "status": "PASS",
+    "detail": ""
+  },
+  {
+    "group": "mobile",
+    "test": "syllabus page 65",
+    "status": "PASS",
+    "detail": ""
+  },
+  {
+    "group": "mobile",
+    "test": "syllabus page 66",
+    "status": "PASS",
+    "detail": ""
+  },
+  {
+    "group": "mobile",
+    "test": "syllabus page 67",
+    "status": "PASS",
+    "detail": ""
+  },
+  {
+    "group": "mobile",
+    "test": "syllabus page 68",
+    "status": "PASS",
+    "detail": ""
+  },
+  {
+    "group": "mobile",
+    "test": "syllabus page 69",
+    "status": "PASS",
+    "detail": ""
+  },
+  {
+    "group": "mobile",
+    "test": "syllabus page 70",
+    "status": "PASS",
+    "detail": ""
+  },
+  {
+    "group": "mobile",
+    "test": "syllabus page 71",
+    "status": "PASS",
+    "detail": ""
+  },
+  {
+    "group": "mobile",
+    "test": "syllabus page 72",
+    "status": "PASS",
+    "detail": ""
+  },
+  {
+    "group": "mobile",
+    "test": "syllabus page 73",
+    "status": "PASS",
+    "detail": ""
+  },
+  {
+    "group": "mobile",
+    "test": "syllabus page 74",
+    "status": "PASS",
+    "detail": ""
+  },
+  {
+    "group": "mobile",
+    "test": "syllabus page 75",
+    "status": "PASS",
+    "detail": ""
+  },
+  {
+    "group": "mobile",
+    "test": "syllabus page 76",
+    "status": "PASS",
+    "detail": ""
+  },
+  {
+    "group": "mobile",
+    "test": "syllabus page 77",
+    "status": "PASS",
+    "detail": ""
+  },
+  {
+    "group": "mobile",
+    "test": "syllabus page 78",
+    "status": "PASS",
+    "detail": ""
+  },
+  {
+    "group": "mobile",
+    "test": "syllabus page 79",
+    "status": "PASS",
+    "detail": ""
+  },
+  {
+    "group": "mobile",
+    "test": "return to home",
+    "status": "PASS",
+    "detail": ""
+  },
+  {
+    "group": "mobile",
+    "test": "exam A question list",
+    "status": "PASS",
+    "detail": ""
+  },
+  {
+    "group": "mobile",
+    "test": "exam A timer starts",
+    "status": "PASS",
+    "detail": ""
+  },
+  {
+    "group": "mobile",
+    "test": "exam A all questions display",
+    "status": "PASS",
+    "detail": "[]"
+  },
+  {
+    "group": "mobile",
+    "test": "exam A pause",
+    "status": "PASS",
+    "detail": ""
+  },
+  {
+    "group": "mobile",
+    "test": "exam A resume",
+    "status": "PASS",
+    "detail": ""
+  },
+  {
+    "group": "mobile",
+    "test": "exam A to home",
+    "status": "PASS",
+    "detail": ""
+  },
+  {
+    "group": "mobile",
+    "test": "exam APP question list",
+    "status": "PASS",
+    "detail": ""
+  },
+  {
+    "group": "mobile",
+    "test": "exam APP timer starts",
+    "status": "PASS",
+    "detail": ""
+  },
+  {
+    "group": "mobile",
+    "test": "exam APP all questions display",
+    "status": "PASS",
+    "detail": "[]"
+  },
+  {
+    "group": "mobile",
+    "test": "exam APP pause",
+    "status": "PASS",
+    "detail": ""
+  },
+  {
+    "group": "mobile",
+    "test": "exam APP resume",
+    "status": "PASS",
+    "detail": ""
+  },
+  {
+    "group": "mobile",
+    "test": "exam APP to home",
+    "status": "PASS",
+    "detail": ""
+  },
+  {
+    "group": "mobile",
+    "test": "exam B question list",
+    "status": "PASS",
+    "detail": ""
+  },
+  {
+    "group": "mobile",
+    "test": "exam B timer starts",
+    "status": "PASS",
+    "detail": ""
+  },
+  {
+    "group": "mobile",
+    "test": "exam B all questions display",
+    "status": "PASS",
+    "detail": "[]"
+  },
+  {
+    "group": "mobile",
+    "test": "exam B pause",
+    "status": "PASS",
+    "detail": ""
+  },
+  {
+    "group": "mobile",
+    "test": "exam B resume",
+    "status": "PASS",
+    "detail": ""
+  },
+  {
+    "group": "mobile",
+    "test": "exam B to home",
+    "status": "PASS",
+    "detail": ""
+  },
+  {
+    "group": "mobile",
+    "test": "exam C question list",
+    "status": "PASS",
+    "detail": ""
+  },
+  {
+    "group": "mobile",
+    "test": "exam C timer starts",
+    "status": "PASS",
+    "detail": ""
+  },
+  {
+    "group": "mobile",
+    "test": "exam C all questions display",
+    "status": "PASS",
+    "detail": "[]"
+  },
+  {
+    "group": "mobile",
+    "test": "exam C pause",
+    "status": "PASS",
+    "detail": ""
+  },
+  {
+    "group": "mobile",
+    "test": "exam C resume",
+    "status": "PASS",
+    "detail": ""
+  },
+  {
+    "group": "mobile",
+    "test": "exam C to home",
+    "status": "PASS",
+    "detail": ""
+  },
+  {
+    "group": "mobile",
+    "test": "exam D question list",
+    "status": "PASS",
+    "detail": ""
+  },
+  {
+    "group": "mobile",
+    "test": "exam D timer starts",
+    "status": "PASS",
+    "detail": ""
+  },
+  {
+    "group": "mobile",
+    "test": "exam D all questions display",
+    "status": "PASS",
+    "detail": "[]"
+  },
+  {
+    "group": "mobile",
+    "test": "exam D pause",
+    "status": "PASS",
+    "detail": ""
+  },
+  {
+    "group": "mobile",
+    "test": "exam D resume",
+    "status": "PASS",
+    "detail": ""
+  },
+  {
+    "group": "mobile",
+    "test": "exam D to home",
+    "status": "PASS",
+    "detail": ""
+  },
+  {
+    "group": "mobile",
+    "test": "exam MIX question list",
+    "status": "PASS",
+    "detail": ""
+  },
+  {
+    "group": "mobile",
+    "test": "exam MIX timer starts",
+    "status": "PASS",
+    "detail": ""
+  },
+  {
+    "group": "mobile",
+    "test": "exam MIX all questions display",
+    "status": "PASS",
+    "detail": "[]"
+  },
+  {
+    "group": "mobile",
+    "test": "exam MIX pause",
+    "status": "PASS",
+    "detail": ""
+  },
+  {
+    "group": "mobile",
+    "test": "exam MIX resume",
+    "status": "PASS",
+    "detail": ""
+  },
+  {
+    "group": "mobile",
+    "test": "exam MIX to home",
+    "status": "PASS",
+    "detail": ""
+  },
+  {
+    "group": "mobile",
+    "test": "scoring 100% A",
+    "status": "PASS",
+    "detail": ""
+  },
+  {
+    "group": "mobile",
+    "test": "scoring 100% APP",
+    "status": "PASS",
+    "detail": ""
+  },
+  {
+    "group": "mobile",
+    "test": "scoring 100% B",
+    "status": "PASS",
+    "detail": ""
+  },
+  {
+    "group": "mobile",
+    "test": "scoring 100% C",
+    "status": "PASS",
+    "detail": ""
+  },
+  {
+    "group": "mobile",
+    "test": "scoring 100% D",
+    "status": "PASS",
+    "detail": ""
+  },
+  {
+    "group": "mobile",
+    "test": "scoring 100% MIX",
+    "status": "PASS",
+    "detail": ""
+  },
+  {
+    "group": "mobile",
+    "test": "A-A21 scoring A correct",
+    "status": "PASS",
+    "detail": ""
+  },
+  {
+    "group": "mobile",
+    "test": "no undefined in results",
+    "status": "PASS",
+    "detail": ""
+  },
+  {
+    "group": "mobile",
+    "test": "reload saves selected answers and position",
+    "status": "PASS",
+    "detail": ""
+  },
+  {
+    "group": "mobile",
+    "test": "automatic submission on zero seconds",
+    "status": "PASS",
+    "detail": ""
+  },
+  {
+    "group": "mobile",
+    "test": "no JavaScript runtime exceptions",
+    "status": "PASS",
+    "detail": "[]"
+  }
+]

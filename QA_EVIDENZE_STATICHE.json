@@ -1,0 +1,237 @@
+[
+  {
+    "test": "expected set sizes",
+    "status": "PASS",
+    "notes": ""
+  },
+  {
+    "test": "expected set sizes",
+    "status": "PASS",
+    "notes": ""
+  },
+  {
+    "test": "expected set sizes",
+    "status": "PASS",
+    "notes": ""
+  },
+  {
+    "test": "expected set sizes",
+    "status": "PASS",
+    "notes": ""
+  },
+  {
+    "test": "expected set sizes",
+    "status": "PASS",
+    "notes": ""
+  },
+  {
+    "test": "exactly 3 authorized modifications",
+    "status": "PASS",
+    "notes": "[('A-40', ['choiceText']), ('A-A21', ['correct']), ('B-40', ['choiceText'])]"
+  },
+  {
+    "test": "verified change A-40",
+    "status": "PASS",
+    "notes": ""
+  },
+  {
+    "test": "verified change A-A21",
+    "status": "PASS",
+    "notes": ""
+  },
+  {
+    "test": "verified change B-40",
+    "status": "PASS",
+    "notes": ""
+  },
+  {
+    "test": "syllabus original syllabus-capitolo-1.js",
+    "status": "PASS",
+    "notes": ""
+  },
+  {
+    "test": "syllabus original syllabus-capitolo-2.js",
+    "status": "PASS",
+    "notes": ""
+  },
+  {
+    "test": "syllabus original syllabus-capitolo-3.js",
+    "status": "PASS",
+    "notes": ""
+  },
+  {
+    "test": "syllabus original syllabus-capitolo-4.js",
+    "status": "PASS",
+    "notes": ""
+  },
+  {
+    "test": "syllabus original syllabus-capitolo-5.js",
+    "status": "PASS",
+    "notes": ""
+  },
+  {
+    "test": "syllabus original syllabus-capitolo-6.js",
+    "status": "PASS",
+    "notes": ""
+  },
+  {
+    "test": "149 assets",
+    "status": "PASS",
+    "notes": ""
+  },
+  {
+    "test": "all assets SHA256",
+    "status": "PASS",
+    "notes": ""
+  },
+  {
+    "test": "referenced JS js/data/domande-a.js",
+    "status": "PASS",
+    "notes": ""
+  },
+  {
+    "test": "referenced JS js/data/domande-appendice-a.js",
+    "status": "PASS",
+    "notes": ""
+  },
+  {
+    "test": "referenced JS js/data/domande-b.js",
+    "status": "PASS",
+    "notes": ""
+  },
+  {
+    "test": "referenced JS js/data/domande-c.js",
+    "status": "PASS",
+    "notes": ""
+  },
+  {
+    "test": "referenced JS js/data/domande-d.js",
+    "status": "PASS",
+    "notes": ""
+  },
+  {
+    "test": "referenced JS js/data/syllabus-capitolo-1.js",
+    "status": "PASS",
+    "notes": ""
+  },
+  {
+    "test": "referenced JS js/data/syllabus-capitolo-2.js",
+    "status": "PASS",
+    "notes": ""
+  },
+  {
+    "test": "referenced JS js/data/syllabus-capitolo-3.js",
+    "status": "PASS",
+    "notes": ""
+  },
+  {
+    "test": "referenced JS js/data/syllabus-capitolo-4.js",
+    "status": "PASS",
+    "notes": ""
+  },
+  {
+    "test": "referenced JS js/data/syllabus-capitolo-5.js",
+    "status": "PASS",
+    "notes": ""
+  },
+  {
+    "test": "referenced JS js/data/syllabus-capitolo-6.js",
+    "status": "PASS",
+    "notes": ""
+  },
+  {
+    "test": "referenced JS js/app.js",
+    "status": "PASS",
+    "notes": ""
+  },
+  {
+    "test": "referenced CSS css/styles.css",
+    "status": "PASS",
+    "notes": ""
+  },
+  {
+    "test": "review button gone",
+    "status": "PASS",
+    "notes": ""
+  },
+  {
+    "test": "formula panel exists",
+    "status": "PASS",
+    "notes": ""
+  },
+  {
+    "test": "homepage controls",
+    "status": "PASS",
+    "notes": ""
+  },
+  {
+    "test": "JS syntax js/app.js",
+    "status": "PASS",
+    "notes": ""
+  },
+  {
+    "test": "JS syntax js/data/syllabus-capitolo-5.js",
+    "status": "PASS",
+    "notes": ""
+  },
+  {
+    "test": "JS syntax js/data/domande-c.js",
+    "status": "PASS",
+    "notes": ""
+  },
+  {
+    "test": "JS syntax js/data/syllabus-capitolo-3.js",
+    "status": "PASS",
+    "notes": ""
+  },
+  {
+    "test": "JS syntax js/data/domande-b.js",
+    "status": "PASS",
+    "notes": ""
+  },
+  {
+    "test": "JS syntax js/data/syllabus-capitolo-1.js",
+    "status": "PASS",
+    "notes": ""
+  },
+  {
+    "test": "JS syntax js/data/syllabus-capitolo-6.js",
+    "status": "PASS",
+    "notes": ""
+  },
+  {
+    "test": "JS syntax js/data/domande-a.js",
+    "status": "PASS",
+    "notes": ""
+  },
+  {
+    "test": "JS syntax js/data/domande-appendice-a.js",
+    "status": "PASS",
+    "notes": ""
+  },
+  {
+    "test": "JS syntax js/data/syllabus-capitolo-4.js",
+    "status": "PASS",
+    "notes": ""
+  },
+  {
+    "test": "JS syntax js/data/syllabus-capitolo-2.js",
+    "status": "PASS",
+    "notes": ""
+  },
+  {
+    "test": "JS syntax js/data/domande-d.js",
+    "status": "PASS",
+    "notes": ""
+  },
+  {
+    "test": "escaping function handles apostrophes",
+    "status": "PASS",
+    "notes": ""
+  },
+  {
+    "test": "formula chapters four",
+    "status": "PASS",
+    "notes": ""
+  }
+]
